@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|ab8ee8b4-3a17-4533-accb-9eebedb3e725
+C:\Users\acer\OneDrive\文档\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|c072f502-e3b5-41d6-9a5a-3bf51c287802
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|2ae8c264-def7-4428-9f0c-30cf7a2204e4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|cb971ce3-0f9c-40f9-8b41-1cbdd5980d46
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|9883c9c1-8bfd-40ba-8781-ed132540da0c
+C:\Sandbox\Sem2\SDHD\Git\SDHD\TxtoMATLAB\Ex2Uint8toMatlab\Ex2.cydsn\Ex2.cyprj|45e50421-d06f-4e89-be79-7ec4c130160e
