@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|8b9ccdde-e94f-4783-a7c1-77007b8128f3
+C:\Users\acer\OneDrive\文档\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|f474d165-ce0e-453b-82df-b6265c3c0f2a
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|6bd03a9b-37c5-4635-af50-530c030c59f9
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|31d9596d-c95e-4d1f-a08f-f7d9a31db255
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|61add85e-261d-4634-b71e-d1887d6cf276
+C:\Sandbox\Sem2\SDHD\TrialSDHD\UART_TalkBack\UART_EX1.cydsn\UART_EX1.cyprj|caf56a88-a733-471c-b64f-771e80e022c7
