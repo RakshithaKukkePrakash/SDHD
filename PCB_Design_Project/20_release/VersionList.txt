@@ -1,0 +1,9 @@
+15.03.2021, S. Bannwarth
+------------------------
+
+
+Note: Every Version gets an entry, explaining their stpeciality. e.g.:
+
+15.03.2021 - Astabel Multivibrarot, Vesion 1.0
+------------------------------------------------
+Feature: Single Supply Version, one layer PCB
