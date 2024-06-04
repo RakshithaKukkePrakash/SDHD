@@ -1,0 +1,12 @@
+--------------- Build Started: 06/04/2024 23:27:24 Project: TestBench, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+cydsfit.exe -.appdatapath "C:\Users\acer\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\TestBench.cyprj -d CY8C5888AXQ-LP096 -s C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+Elaborating Design...
+ADD: sdb.M0012: error: Terminals "WaveDAC8_1.Wave,DAC.y_0" connected to signal "Net_15" have mismatching types.
+ * C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\TopDesign\TopDesign.cysch (Signal: Net_15)
+ * C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\TopDesign\TopDesign.cysch (Shape_2.7)
+ * C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\TopDesign\TopDesign.cysch (Wave)
+ * C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\TopDesign\TopDesign.cysch (Shape_7.2)
+ * C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\TopDesign\TopDesign.cysch (y_0)
+ * C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\TopDesign\TopDesign.cysch (Shape_9)
+Error: fit.M0050: The fitter aborted due to errors, please address all errors and rebuild. (App=cydsfit)
+--------------- Build Failed: 06/04/2024 23:27:27 ---------------
