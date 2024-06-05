@@ -168,10 +168,6 @@
 <v>Ex2Uint8toMatlab\Ex2\PSoC 5LP Architecture TRM</v>
 <v>Ex2Uint8toMatlab\Ex2\CY8C58LP Family Datasheet</v>
 <v>Ex2Uint8toMatlab\Ex2\System Reference Guides</v>
-<v>Ex2Uint8toMatlab\Ex2\System Reference Guides\cy_boot_v6_0</v>
-<v>Ex2Uint8toMatlab\Ex2\cy_pins_v2_20</v>
-<v>Ex2Uint8toMatlab\Ex2\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Ex2Uint8toMatlab\Ex2\UART_v2_50.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Ex2Uint8toMatlab</v>
@@ -179,10 +175,6 @@
 <v>Ex2Uint8toMatlab\Ex2\PSoC 5LP Architecture TRM</v>
 <v>Ex2Uint8toMatlab\Ex2\CY8C58LP Family Datasheet</v>
 <v>Ex2Uint8toMatlab\Ex2\System Reference Guides</v>
-<v>Ex2Uint8toMatlab\Ex2\System Reference Guides\cy_boot_v6_0</v>
-<v>Ex2Uint8toMatlab\Ex2\cy_pins_v2_20</v>
-<v>Ex2Uint8toMatlab\Ex2\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Ex2Uint8toMatlab\Ex2\UART_v2_50.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -202,7 +194,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="926, 493" SelectedTabbedMdiWindow="3161e88e-582c-43b1-8b1b-36c60c655369"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="be389097-de6b-4648-a141-810654c7ce70" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\TxtoMATLAB\Ex2Uint8toMatlab\Ex2.cydsn\TopDesign\TopDesign.cysch" Guid="215ca6d4-6041-4bc3-83fa-d11f368dedbf" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\TxtoMATLAB\Ex2Uint8toMatlab\Ex2.cydsn\main.c" Guid="3161e88e-582c-43b1-8b1b-36c60c655369" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\TxtoMATLAB\Ex2Uint8toMatlab\Ex2.cydsn\Ex2.cydwr" Guid="720e54ab-8e2e-44fd-a281-145f3b9a3950" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1033, 493" SelectedTabbedMdiWindow="3161e88e-582c-43b1-8b1b-36c60c655369"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="be389097-de6b-4648-a141-810654c7ce70" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\TxtoMATLAB\Ex2Uint8toMatlab\Ex2.cydsn\TopDesign\TopDesign.cysch" Guid="215ca6d4-6041-4bc3-83fa-d11f368dedbf" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\TxtoMATLAB\Ex2Uint8toMatlab\Ex2.cydsn\main.c" Guid="3161e88e-582c-43b1-8b1b-36c60c655369" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\TxtoMATLAB\Ex2Uint8toMatlab\Ex2.cydsn\Ex2.cydwr" Guid="720e54ab-8e2e-44fd-a281-145f3b9a3950" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
