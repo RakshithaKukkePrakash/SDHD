@@ -46,39 +46,72 @@
 /*****************************************************************************/
 void statemachine()
 {
-    static uint8_t count = 0; 
-    uint16_t adcArray[1024] = {0};
-    FFT_State_t state= IDLE;
+    static uint16_t adcArray[1024] = {0};
+    static FFT_State_t state= IDLE;
+    
     switch(state)
     {
         case IDLE:
-        {
-            UART_Start();
-            WaveDAC8_1_Start();
-            ADC_DelSig_1_Start();
-            if(Push_Button_Read() == 1)
+        {          
+            LED_RED_Write(1);
+            LED_ORANGE_Write(0);
+            LED_GREEN_Write(0);
+            
+            count = 0;
+            if(buttonPressed == 1)
             {
                 state = SAMPLING;
             }
+            break;
         }
         case SAMPLING:
         {
+            LED_RED_Write(0);
+            LED_ORANGE_Write(1);
+            LED_GREEN_Write(0);
             
-            ADC_DelSig_1_StartConvert();
-            if(UART_GetChar() == 's')
+            for(uint16_t i = 0; i < 1024; i++)
+            {
+                ADC_DelSig_IsEndConversion(ADC_DelSig_WAIT_FOR_RESULT);
+                adcArray[i] = (uint16_t)ADC_DelSig_GetResult32();
+            }
+           
+            if(charS)
             {
                 state = UART_TRANSFER;
             }
-            
+            break;
         }
         case UART_TRANSFER:
         {
-
-                UART_PutChar();
+            LED_RED_Write(0);
+            LED_ORANGE_Write(0);
+            LED_GREEN_Write(1);
             
-            state = IDLE;
+            for (uint16_t i = 0; i < 1024; i++) {
+                UART_PutChar(adcArray[i]);
+                UART_PutChar((adcArray[i] >> 8));
+            }
+            
             count++;
+            if (charO) 
+            {
+                if (count < 10) 
+                {
+                    state = SAMPLING;
+                    charO = 0;
+                } 
+                else if(count == 10)
+                {
+                    state = IDLE;
+                    charO = 0;
+                }
+            }
+            break;
         }
+        default:
+            state = IDLE;
+        break;
     }
     
 }

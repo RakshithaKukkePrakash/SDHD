@@ -22,7 +22,6 @@
 #include "cyfitter.h"
 #include "CyLib.h"
 #include "cyfitter_cfg.h"
-#include "cyapicallbacks.h"
 
 #define CY_NEED_CYCLOCKSTARTUPERROR 1
 
@@ -148,7 +147,7 @@ static void CyClockStartupError(uint8 errorCode)
 }
 #endif
 
-#define CY_CFG_BASE_ADDR_COUNT 24u
+#define CY_CFG_BASE_ADDR_COUNT 26u
 CYPACKED typedef struct
 {
 	uint8 offset;
@@ -156,22 +155,22 @@ CYPACKED typedef struct
 } CYPACKED_ATTR cy_cfg_addrvalue_t;
 
 #define cy_cfg_addr_table ((const uint32 CYFAR *)0x48000000u)
-#define cy_cfg_data_table ((const cy_cfg_addrvalue_t CYFAR *)0x48000060u)
+#define cy_cfg_data_table ((const cy_cfg_addrvalue_t CYFAR *)0x48000068u)
 
 /* UDB_0_4_0_CONFIG Address: CYDEV_UCFG_B0_P6_U1_BASE Size (bytes): 128 */
-#define BS_UDB_0_4_0_CONFIG_VAL ((const uint8 CYFAR *)0x480003B4u)
+#define BS_UDB_0_4_0_CONFIG_VAL ((const uint8 CYFAR *)0x480003DCu)
 
 /* IOPINS0_8 Address: CYREG_PRT15_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_8_VAL ((const uint8 CYFAR *)0x48000434u)
+#define BS_IOPINS0_8_VAL ((const uint8 CYFAR *)0x4800045Cu)
 
 /* IOPINS0_1 Address: CYREG_PRT1_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x4800043Cu)
+#define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x48000464u)
 
 /* IOPINS0_2 Address: CYREG_PRT2_DR Size (bytes): 10 */
-#define BS_IOPINS0_2_VAL ((const uint8 CYFAR *)0x48000444u)
+#define BS_IOPINS0_2_VAL ((const uint8 CYFAR *)0x4800046Cu)
 
 /* CYDEV_CLKDIST_ACFG0_CFG0 Address: CYREG_CLKDIST_ACFG0_CFG0 Size (bytes): 4 */
-#define BS_CYDEV_CLKDIST_ACFG0_CFG0_VAL ((const uint8 CYFAR *)0x48000450u)
+#define BS_CYDEV_CLKDIST_ACFG0_CFG0_VAL ((const uint8 CYFAR *)0x48000478u)
 
 
 /*******************************************************************************
@@ -346,20 +345,20 @@ void SetAnalogRoutingPumps(uint8 enabled)
 #define CY_AMUX_UNUSED CYREG_BOOST_SR
 /* This is an implementation detail of the AMux. Code that depends on it may be
    incompatible with other versions of PSoC Creator. */
-uint8 CYXDATA * const CYCODE ADC_DelSig_1_AMux__addrTable[2] = {
+uint8 CYXDATA * const CYCODE ADC_DelSig_AMux__addrTable[2] = {
 	(uint8 CYXDATA *)CYREG_DSM0_SW3, 
 	(uint8 CYXDATA *)CY_AMUX_UNUSED, 
 };
 
 /* This is an implementation detail of the AMux. Code that depends on it may be
    incompatible with other versions of PSoC Creator. */
-const uint8 CYCODE ADC_DelSig_1_AMux__maskTable[2] = {
+const uint8 CYCODE ADC_DelSig_AMux__maskTable[2] = {
 	0x40u, 
 	0x00u, 
 };
 
 /*******************************************************************************
-* Function Name: ADC_DelSig_1_AMux_Set
+* Function Name: ADC_DelSig_AMux_Set
 ********************************************************************************
 * Summary:
 *  This function is used to set a particular channel as active on the AMux.
@@ -371,16 +370,16 @@ const uint8 CYCODE ADC_DelSig_1_AMux__maskTable[2] = {
 *   void
 *
 *******************************************************************************/
-void ADC_DelSig_1_AMux_Set(uint8 channel)
+void ADC_DelSig_AMux_Set(uint8 channel)
 {
 	if (channel < 2)
 	{
-		*ADC_DelSig_1_AMux__addrTable[channel] |= ADC_DelSig_1_AMux__maskTable[channel];
+		*ADC_DelSig_AMux__addrTable[channel] |= ADC_DelSig_AMux__maskTable[channel];
 	}
 }
 
 /*******************************************************************************
-* Function Name: ADC_DelSig_1_AMux_Unset
+* Function Name: ADC_DelSig_AMux_Unset
 ********************************************************************************
 * Summary:
 *  This function is used to clear a particular channel from being active on the
@@ -393,11 +392,11 @@ void ADC_DelSig_1_AMux_Set(uint8 channel)
 *   void
 *
 *******************************************************************************/
-void ADC_DelSig_1_AMux_Unset(uint8 channel)
+void ADC_DelSig_AMux_Unset(uint8 channel)
 {
 	if (channel < 2)
 	{
-		*ADC_DelSig_1_AMux__addrTable[channel] &= (uint8)~ADC_DelSig_1_AMux__maskTable[channel];
+		*ADC_DelSig_AMux__addrTable[channel] &= (uint8)~ADC_DelSig_AMux__maskTable[channel];
 	}
 }
 

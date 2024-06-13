@@ -1,5 +1,5 @@
 -- Project:   TestBench
--- Generated: 06/05/2024 10:41:23
+-- Generated: 06/13/2024 13:09:30
 -- PSoC Creator  4.4
 
 ENTITY TestBench IS
@@ -42,33 +42,34 @@ ARCHITECTURE __DEFAULT__ OF TestBench IS
     SIGNAL Net_12 : bit;
     SIGNAL Net_23 : bit;
     SIGNAL Net_36 : bit;
+    SIGNAL Net_39 : bit;
     SIGNAL Net_4 : bit;
     SIGNAL Net_40 : bit;
     SIGNAL Push_Button(0)__PA : bit;
     SIGNAL Rx_1(0)__PA : bit;
     SIGNAL Tx_1(0)__PA : bit;
-    SIGNAL \ADC_DelSig_1:Net_245_0\ : bit;
-    SIGNAL \ADC_DelSig_1:Net_245_1\ : bit;
-    SIGNAL \ADC_DelSig_1:Net_245_2\ : bit;
-    SIGNAL \ADC_DelSig_1:Net_245_3\ : bit;
-    SIGNAL \ADC_DelSig_1:Net_245_4\ : bit;
-    SIGNAL \ADC_DelSig_1:Net_245_5\ : bit;
-    SIGNAL \ADC_DelSig_1:Net_245_6\ : bit;
-    SIGNAL \ADC_DelSig_1:Net_245_7\ : bit;
-    SIGNAL \ADC_DelSig_1:Net_488\ : bit;
-    ATTRIBUTE global_signal OF \ADC_DelSig_1:Net_488\ : SIGNAL IS true;
-    SIGNAL \ADC_DelSig_1:Net_488_adig\ : bit;
-    SIGNAL \ADC_DelSig_1:Net_488_adig_local\ : bit;
-    SIGNAL \ADC_DelSig_1:Net_488_local\ : bit;
-    SIGNAL \ADC_DelSig_1:Net_93\ : bit;
-    ATTRIBUTE global_signal OF \ADC_DelSig_1:Net_93\ : SIGNAL IS true;
-    SIGNAL \ADC_DelSig_1:Net_93_local\ : bit;
-    SIGNAL \ADC_DelSig_1:aclock\ : bit;
-    SIGNAL \ADC_DelSig_1:mod_dat_0\ : bit;
-    SIGNAL \ADC_DelSig_1:mod_dat_1\ : bit;
-    SIGNAL \ADC_DelSig_1:mod_dat_2\ : bit;
-    SIGNAL \ADC_DelSig_1:mod_dat_3\ : bit;
-    SIGNAL \ADC_DelSig_1:mod_reset\ : bit;
+    SIGNAL \ADC_DelSig:Net_245_0\ : bit;
+    SIGNAL \ADC_DelSig:Net_245_1\ : bit;
+    SIGNAL \ADC_DelSig:Net_245_2\ : bit;
+    SIGNAL \ADC_DelSig:Net_245_3\ : bit;
+    SIGNAL \ADC_DelSig:Net_245_4\ : bit;
+    SIGNAL \ADC_DelSig:Net_245_5\ : bit;
+    SIGNAL \ADC_DelSig:Net_245_6\ : bit;
+    SIGNAL \ADC_DelSig:Net_245_7\ : bit;
+    SIGNAL \ADC_DelSig:Net_488\ : bit;
+    ATTRIBUTE global_signal OF \ADC_DelSig:Net_488\ : SIGNAL IS true;
+    SIGNAL \ADC_DelSig:Net_488_adig\ : bit;
+    SIGNAL \ADC_DelSig:Net_488_adig_local\ : bit;
+    SIGNAL \ADC_DelSig:Net_488_local\ : bit;
+    SIGNAL \ADC_DelSig:Net_93\ : bit;
+    ATTRIBUTE global_signal OF \ADC_DelSig:Net_93\ : SIGNAL IS true;
+    SIGNAL \ADC_DelSig:Net_93_local\ : bit;
+    SIGNAL \ADC_DelSig:aclock\ : bit;
+    SIGNAL \ADC_DelSig:mod_dat_0\ : bit;
+    SIGNAL \ADC_DelSig:mod_dat_1\ : bit;
+    SIGNAL \ADC_DelSig:mod_dat_2\ : bit;
+    SIGNAL \ADC_DelSig:mod_dat_3\ : bit;
+    SIGNAL \ADC_DelSig:mod_reset\ : bit;
     SIGNAL \UART:BUART:counter_load_not\ : bit;
     SIGNAL \UART:BUART:pollcount_0\ : bit;
     SIGNAL \UART:BUART:pollcount_1\ : bit;
@@ -111,9 +112,9 @@ ARCHITECTURE __DEFAULT__ OF TestBench IS
     ATTRIBUTE udbclken_assigned OF \UART:Net_9\ : SIGNAL IS "True";
     ATTRIBUTE global_signal OF \UART:Net_9\ : SIGNAL IS true;
     SIGNAL \UART:Net_9_local\ : bit;
-    SIGNAL \WaveDAC8_1:Net_279\ : bit;
-    ATTRIBUTE global_signal OF \WaveDAC8_1:Net_279\ : SIGNAL IS true;
-    SIGNAL \WaveDAC8_1:Net_279_local\ : bit;
+    SIGNAL \WaveDAC8:Net_279\ : bit;
+    ATTRIBUTE global_signal OF \WaveDAC8:Net_279\ : SIGNAL IS true;
+    SIGNAL \WaveDAC8:Net_279_local\ : bit;
     SIGNAL __ONE__ : bit;
     ATTRIBUTE POWER OF __ONE__ : SIGNAL IS true;
     SIGNAL __ZERO__ : bit;
@@ -147,11 +148,11 @@ ARCHITECTURE __DEFAULT__ OF TestBench IS
     ATTRIBUTE lib_model OF \UART:BUART:rx_postpoll\ : LABEL IS "macrocell6";
     ATTRIBUTE lib_model OF \UART:BUART:rx_status_4\ : LABEL IS "macrocell7";
     ATTRIBUTE lib_model OF \UART:BUART:rx_status_5\ : LABEL IS "macrocell8";
-    ATTRIBUTE Location OF \ADC_DelSig_1:DSM\ : LABEL IS "F(DSM,0)";
+    ATTRIBUTE Location OF \ADC_DelSig:DSM\ : LABEL IS "F(DSM,0)";
     ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell9";
-    ATTRIBUTE lib_model OF \WaveDAC8_1:Wave1_DMA\ : LABEL IS "drqcell1";
-    ATTRIBUTE lib_model OF \WaveDAC8_1:Wave2_DMA\ : LABEL IS "drqcell2";
-    ATTRIBUTE Location OF \WaveDAC8_1:VDAC8:viDAC8\ : LABEL IS "F(VIDAC,0)";
+    ATTRIBUTE lib_model OF \WaveDAC8:Wave1_DMA\ : LABEL IS "drqcell1";
+    ATTRIBUTE lib_model OF \WaveDAC8:Wave2_DMA\ : LABEL IS "drqcell2";
+    ATTRIBUTE Location OF \WaveDAC8:VDAC8:viDAC8\ : LABEL IS "F(VIDAC,0)";
     ATTRIBUTE lib_model OF \UART:BUART:sTX:TxShifter:u0\ : LABEL IS "datapathcell1";
     ATTRIBUTE lib_model OF \UART:BUART:sTX:sCLOCK:TxBitClkGen\ : LABEL IS "datapathcell2";
     ATTRIBUTE lib_model OF \UART:BUART:sTX:TxSts\ : LABEL IS "statusicell1";
@@ -553,16 +554,16 @@ BEGIN
             clk_bus => ClockBlock_BUS_CLK_local,
             dsi_clkin_div => open,
             dsi_glb_div => open,
-            dclk_glb_0 => \ADC_DelSig_1:Net_93\,
-            dclk_0 => \ADC_DelSig_1:Net_93_local\,
-            aclk_glb_0 => \ADC_DelSig_1:Net_488\,
-            aclk_0 => \ADC_DelSig_1:Net_488_local\,
-            clk_a_dig_glb_0 => \ADC_DelSig_1:Net_488_adig\,
-            clk_a_dig_0 => \ADC_DelSig_1:Net_488_adig_local\,
+            dclk_glb_0 => \ADC_DelSig:Net_93\,
+            dclk_0 => \ADC_DelSig:Net_93_local\,
+            aclk_glb_0 => \ADC_DelSig:Net_488\,
+            aclk_0 => \ADC_DelSig:Net_488_local\,
+            clk_a_dig_glb_0 => \ADC_DelSig:Net_488_adig\,
+            clk_a_dig_0 => \ADC_DelSig:Net_488_adig_local\,
             dclk_glb_1 => \UART:Net_9\,
             dclk_1 => \UART:Net_9_local\,
-            dclk_glb_2 => \WaveDAC8_1:Net_279\,
-            dclk_2 => \WaveDAC8_1:Net_279_local\,
+            dclk_glb_2 => \WaveDAC8:Net_279\,
+            dclk_2 => \WaveDAC8:Net_279_local\,
             aclk_glb_ff_0 => \ClockBlock.aclk_glb_ff_0__sig\);
 
     DAC:logicalport
@@ -1374,7 +1375,7 @@ BEGIN
             main_0 => \UART:BUART:rx_fifonotempty\,
             main_1 => \UART:BUART:rx_state_stop1_reg\);
 
-    \ADC_DelSig_1:DSM\:dsmodcell
+    \ADC_DelSig:DSM\:dsmodcell
         GENERIC MAP(
             cy_registers => "",
             resolution => 16)
@@ -1382,23 +1383,23 @@ BEGIN
             aclock => \ClockBlock.aclk_glb_ff_0__sig\,
             modbitin_udb => open,
             reset_udb => open,
-            reset_dec => \ADC_DelSig_1:mod_reset\,
-            extclk_cp_udb => \ADC_DelSig_1:Net_93_local\,
-            dec_clock => \ADC_DelSig_1:aclock\,
-            mod_dat_3 => \ADC_DelSig_1:mod_dat_3\,
-            mod_dat_2 => \ADC_DelSig_1:mod_dat_2\,
-            mod_dat_1 => \ADC_DelSig_1:mod_dat_1\,
-            mod_dat_0 => \ADC_DelSig_1:mod_dat_0\,
-            dout_udb_7 => \ADC_DelSig_1:Net_245_7\,
-            dout_udb_6 => \ADC_DelSig_1:Net_245_6\,
-            dout_udb_5 => \ADC_DelSig_1:Net_245_5\,
-            dout_udb_4 => \ADC_DelSig_1:Net_245_4\,
-            dout_udb_3 => \ADC_DelSig_1:Net_245_3\,
-            dout_udb_2 => \ADC_DelSig_1:Net_245_2\,
-            dout_udb_1 => \ADC_DelSig_1:Net_245_1\,
-            dout_udb_0 => \ADC_DelSig_1:Net_245_0\);
+            reset_dec => \ADC_DelSig:mod_reset\,
+            extclk_cp_udb => \ADC_DelSig:Net_93_local\,
+            dec_clock => \ADC_DelSig:aclock\,
+            mod_dat_3 => \ADC_DelSig:mod_dat_3\,
+            mod_dat_2 => \ADC_DelSig:mod_dat_2\,
+            mod_dat_1 => \ADC_DelSig:mod_dat_1\,
+            mod_dat_0 => \ADC_DelSig:mod_dat_0\,
+            dout_udb_7 => \ADC_DelSig:Net_245_7\,
+            dout_udb_6 => \ADC_DelSig:Net_245_6\,
+            dout_udb_5 => \ADC_DelSig:Net_245_5\,
+            dout_udb_4 => \ADC_DelSig:Net_245_4\,
+            dout_udb_3 => \ADC_DelSig:Net_245_3\,
+            dout_udb_2 => \ADC_DelSig:Net_245_2\,
+            dout_udb_1 => \ADC_DelSig:Net_245_1\,
+            dout_udb_0 => \ADC_DelSig:Net_245_0\);
 
-    \ADC_DelSig_1:IRQ\:interrupt
+    \ADC_DelSig:IRQ\:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)
@@ -1406,17 +1407,17 @@ BEGIN
             interrupt => Net_4,
             clock => ClockBlock_BUS_CLK);
 
-    \ADC_DelSig_1:DEC\:decimatorcell
+    \ADC_DelSig:DEC\:decimatorcell
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            aclock => \ADC_DelSig_1:aclock\,
-            mod_dat_3 => \ADC_DelSig_1:mod_dat_3\,
-            mod_dat_2 => \ADC_DelSig_1:mod_dat_2\,
-            mod_dat_1 => \ADC_DelSig_1:mod_dat_1\,
-            mod_dat_0 => \ADC_DelSig_1:mod_dat_0\,
+            aclock => \ADC_DelSig:aclock\,
+            mod_dat_3 => \ADC_DelSig:mod_dat_3\,
+            mod_dat_2 => \ADC_DelSig:mod_dat_2\,
+            mod_dat_1 => \ADC_DelSig:mod_dat_1\,
+            mod_dat_0 => \ADC_DelSig:mod_dat_0\,
             ext_start => __ONE__,
-            modrst => \ADC_DelSig_1:mod_reset\,
+            modrst => \ADC_DelSig:mod_reset\,
             interrupt => Net_4);
 
     __ONE__:macrocell
@@ -1427,17 +1428,17 @@ BEGIN
         PORT MAP(
             q => __ONE__);
 
-    \WaveDAC8_1:Wave1_DMA\:drqcell
+    \WaveDAC8:Wave1_DMA\:drqcell
         GENERIC MAP(
             drq_type => "10",
             num_tds => 0)
         PORT MAP(
-            dmareq => \WaveDAC8_1:Net_279_local\,
+            dmareq => \WaveDAC8:Net_279_local\,
             termin => '0',
             termout => Net_11,
             clock => ClockBlock_BUS_CLK);
 
-    \WaveDAC8_1:Wave2_DMA\:drqcell
+    \WaveDAC8:Wave2_DMA\:drqcell
         GENERIC MAP(
             drq_type => "10",
             num_tds => 0)
@@ -1447,7 +1448,7 @@ BEGIN
             termout => Net_12,
             clock => ClockBlock_BUS_CLK);
 
-    \WaveDAC8_1:VDAC8:viDAC8\:vidaccell
+    \WaveDAC8:VDAC8:viDAC8\:vidaccell
         GENERIC MAP(
             cy_registers => "",
             is_all_if_any => 0,
@@ -1456,14 +1457,14 @@ BEGIN
             reset => open,
             idir => open,
             ioff => open,
-            strobe_udb => \WaveDAC8_1:Net_279_local\);
+            strobe_udb => \WaveDAC8:Net_279_local\);
 
-    isr_ADC:interrupt
+    isr_UART:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => Net_4,
+            interrupt => Net_39,
             clock => ClockBlock_BUS_CLK);
 
     \UART:BUART:sTX:TxShifter:u0\:datapathcell
@@ -1635,7 +1636,8 @@ BEGIN
             status_3 => \UART:BUART:rx_status_3\,
             status_2 => open,
             status_1 => open,
-            status_0 => open);
+            status_0 => open,
+            interrupt => Net_39);
 
     isr_pushButton:interrupt
         GENERIC MAP(

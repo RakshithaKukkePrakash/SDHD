@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Lab3\TestBench\Generated_Source\PSoC5\Push_Button\Push_Button.h">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Lab3\TestBench\source\bsw\statemachine.c">
 <ExpandedNodeIds>
 <v>Lab3</v>
 <v>Lab3\TestBench</v>
@@ -38,9 +38,20 @@
 <v>Lab3\TestBench\Generated_Source</v>
 <v>Lab3\TestBench\Generated_Source\PSoC5</v>
 <v>Lab3\TestBench\Generated_Source\PSoC5\Push_Button</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\WaveDAC8_1</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
+<v>Lab3</v>
+<v>Lab3\TestBench</v>
+<v>Lab3\TestBench\TopDesign</v>
+<v>Lab3\TestBench\TestBench.cydwr</v>
+<v>Lab3\TestBench\TestBench.cydwr\Pins</v>
+<v>Lab3\TestBench\TestBench.cydwr\Analog</v>
+<v>Lab3\TestBench\TestBench.cydwr\Clocks</v>
+<v>Lab3\TestBench\TestBench.cydwr\Interrupts</v>
+<v>Lab3\TestBench\TestBench.cydwr\DMA</v>
+<v>Lab3\TestBench\TestBench.cydwr\System</v>
+<v>Lab3\TestBench\TestBench.cydwr\Directives</v>
+<v>Lab3\TestBench\TestBench.cydwr\Flash Security</v>
 <v>Lab3\TestBench\TestBench.cydwr\EEPROM</v>
 <v>Lab3\TestBench\source</v>
 <v>Lab3\TestBench\source\asw</v>
@@ -51,31 +62,19 @@
 <v>Lab3\TestBench\source\bsw\statemachine.h</v>
 <v>Lab3\TestBench\Generated_Source</v>
 <v>Lab3\TestBench\Generated_Source\PSoC5</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\ADC_DelSig_1</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\ADC_DelSig_1_AMux</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\ADC_DelSig_1_Ext_CP_Clk</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\ADC_DelSig_1_IRQ</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\ADC_DelSig_1_theACLK</v>
+<v>Lab3\TestBench\Generated_Source\PSoC5\ADC_DelSig</v>
+<v>Lab3\TestBench\Generated_Source\PSoC5\ADC_DelSig_AMux</v>
+<v>Lab3\TestBench\Generated_Source\PSoC5\ADC_DelSig_Ext_CP_Clk</v>
+<v>Lab3\TestBench\Generated_Source\PSoC5\ADC_DelSig_IRQ</v>
+<v>Lab3\TestBench\Generated_Source\PSoC5\ADC_DelSig_theACLK</v>
 <v>Lab3\TestBench\Generated_Source\PSoC5\ADC_In</v>
 <v>Lab3\TestBench\Generated_Source\PSoC5\cy_boot</v>
 <v>Lab3\TestBench\Generated_Source\PSoC5\DAC</v>
 <v>Lab3\TestBench\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\isr_ADC</v>
 <v>Lab3\TestBench\Generated_Source\PSoC5\isr_pushButton</v>
+<v>Lab3\TestBench\Generated_Source\PSoC5\isr_UART</v>
 <v>Lab3\TestBench\Generated_Source\PSoC5\LED_GREEN</v>
 <v>Lab3\TestBench\Generated_Source\PSoC5\LED_ORANGE</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\LED_RED</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\Push_Button</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\Push_Button\Push_Button.c</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\Push_Button\Push_Button.h</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\Push_Button\Push_Button_aliases.h</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\UART</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\UART_IntClock</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\WaveDAC8_1</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\WaveDAC8_1\WaveDAC8_1.c</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\WaveDAC8_1\WaveDAC8_1.h</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\WaveDAC8_1\WaveDAC8_1_PM.c</v>
-<v>Lab3\TestBench\Generated_Source\PSoC5\WaveDAC8_1_DacClk</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -100,13 +99,13 @@
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_1.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_1_AMux.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_1_Ext_CP_Clk.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_1_INT.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_1_IRQ.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_1_PM.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_1_theACLK.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_AMux.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_Ext_CP_Clk.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_INT.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_IRQ.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_PM.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_theACLK.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_In.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
@@ -120,25 +119,26 @@
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\DAC.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_ADC.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_pushButton.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_UART.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\LED_GREEN.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\LED_ORANGE.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\LED_RED.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\Push_Button.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\statemachine.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_INT.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_IntClock.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1_DacClk.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1_PM.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1_VDAC8.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1_VDAC8_PM.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1_Wave1_DMA_dma.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1_Wave2_DMA_dma.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_DacClk.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_PM.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_VDAC8.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_VDAC8_PM.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_Wave1_DMA_dma.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_Wave2_DMA_dma.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\TestBench.elf</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\TestBench.hex</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\TestBench.map</v>
@@ -153,13 +153,13 @@
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_1.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_1_AMux.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_1_Ext_CP_Clk.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_1_INT.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_1_IRQ.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_1_PM.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_1_theACLK.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_AMux.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_Ext_CP_Clk.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_INT.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_IRQ.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_PM.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_theACLK.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_In.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
@@ -173,15 +173,15 @@
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\DAC.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_ADC.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_pushButton.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_UART.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\LED_GREEN.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\LED_ORANGE.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\LED_RED.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\Push_Button.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\statemachine.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -237,11 +237,12 @@
 <OpenDocs>
 <name v=".\TestBench.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\TestBench.cydsn\TestBench.cydwr" />
-<name v=".\TestBench.cydsn\source\bsw\statemachine.c" />
 <name v=".\TestBench.cydsn\source\bsw\statemachine.h" />
 <name v=".\TestBench.cydsn\source\asw\main.c" />
 <name v=".\TestBench.cydsn\Generated_Source\PSoC5\Push_Button.h" />
-<name v=".\TestBench.cydsn\Generated_Source\PSoC5\ADC_DelSig_1.c" />
+<name v=".\TestBench.cydsn\Generated_Source\PSoC5\WaveDAC8.c" />
+<name v=".\TestBench.cydsn\Generated_Source\PSoC5\cytypes.h" />
+<name v=".\TestBench.cydsn\source\bsw\statemachine.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -249,7 +250,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="828, 493" SelectedTabbedMdiWindow="9b34b583-d0b3-4fec-a3a0-bb99e5591a9d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="be389097-de6b-4648-a141-810654c7ce70" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\TopDesign\TopDesign.cysch" Guid="1aafd0a5-ee36-4665-8712-eccd9962cf63" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\TestBench.cydwr" Guid="55e56c9f-6c40-40a2-97e0-73a0729956b5" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\bsw\statemachine.c" Guid="9b34b583-d0b3-4fec-a3a0-bb99e5591a9d" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\bsw\statemachine.h" Guid="19c27aed-30fb-43a9-abd4-80887b18d2b4" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\asw\main.c" Guid="203cda39-8876-41fd-b6ef-79ac902ff04f" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\Generated_Source\PSoC5\Push_Button.h" Guid="5a3d430a-1fad-40fb-b65b-c482906726a1" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\Generated_Source\PSoC5\ADC_DelSig_1.c" Guid="550c8124-1bd0-4487-abef-d8e94f732dbd" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="930, 449" SelectedTabbedMdiWindow="203cda39-8876-41fd-b6ef-79ac902ff04f"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="be389097-de6b-4648-a141-810654c7ce70" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\TopDesign\TopDesign.cysch" Guid="1aafd0a5-ee36-4665-8712-eccd9962cf63" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\TestBench.cydwr" Guid="55e56c9f-6c40-40a2-97e0-73a0729956b5" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\bsw\statemachine.h" Guid="19c27aed-30fb-43a9-abd4-80887b18d2b4" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\asw\main.c" Guid="203cda39-8876-41fd-b6ef-79ac902ff04f" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\Generated_Source\PSoC5\Push_Button.h" Guid="5a3d430a-1fad-40fb-b65b-c482906726a1" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\Generated_Source\PSoC5\WaveDAC8.c" Guid="abd503ce-731f-42ed-8f3a-00208e1ab332" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\Generated_Source\PSoC5\cytypes.h" Guid="c120f87f-72bf-426f-8b4f-7e52eeb87b01" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\bsw\statemachine.c" Guid="86495f66-2bf4-4047-8705-f9d155d52d34" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

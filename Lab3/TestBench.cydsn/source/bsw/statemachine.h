@@ -78,11 +78,7 @@
 /*****************************************************************************/
 /* Global pre-processor symbols/macros and type declarations                 */
 /*****************************************************************************/
-#include "UART.h"
-#include "WaveDAC8_1.h"
-#include "ADC_DelSig_1.h"
-#include "Push_Button.h"
-    
+#include "project.h"
 // Wrapper to allow representing the file in Together as class
 #ifdef TOGETHER
 
@@ -100,7 +96,10 @@ typedef enum {
     SAMPLING,
     UART_TRANSFER
     }FFT_State_t;
-
+static uint8_t count = 0; 
+extern uint8_t charS;
+extern uint8_t charO;
+extern uint8_t buttonPressed;
 /*****************************************************************************/
 /* API functions                                                             */
 /*****************************************************************************/
