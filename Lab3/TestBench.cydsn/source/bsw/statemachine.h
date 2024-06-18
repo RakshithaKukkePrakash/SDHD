@@ -79,14 +79,7 @@
 /* Global pre-processor symbols/macros and type declarations                 */
 /*****************************************************************************/
 #include "project.h"
-// Wrapper to allow representing the file in Together as class
-#ifdef TOGETHER
-
-class watchdog
-{
-public:
-#endif /* Together */
-
+#include "fft_application.h"
 /*****************************************************************************/
 /* Extern global variables                                                   */
 /*****************************************************************************/
@@ -95,45 +88,15 @@ typedef enum {
     IDLE,
     SAMPLING,
     UART_TRANSFER
-    }FFT_State_t;
-static uint8_t count = 0; 
-extern uint8_t charS;
-extern uint8_t charO;
-extern uint8_t buttonPressed;
+}FFT_State_t;
+
 /*****************************************************************************/
 /* API functions                                                             */
 /*****************************************************************************/
+void init_func();
+void statemachine(uint16_t *adcArray);
+CY_ISR_PROTO(isr_UART);
+CY_ISR_PROTO(isr_pushButton);
 
-void statemachine();
-/*****************************************************************************/
-/* Private stuff, only visible for Together, declared static in cpp - File   */
-/*****************************************************************************/
-
-
-#ifdef TOGETHER
-//Not visible for compiler, only used for document generation
-private:
-
-//Attributes
-
-/**
- * <description>
- */
-static type FILE__variable;
-    /**@link aggregationByValue
-     * @supplierCardinality 2*/
-    ADC lnkADC;
-//Operations
-
-/**
- * <description>
- * @param <para 1>
- * @return <return description>
- */
-static type FILE__function(uint16_t cmd);
-
-
-};
-#endif /* Together */
 
 #endif /* FILE_H */

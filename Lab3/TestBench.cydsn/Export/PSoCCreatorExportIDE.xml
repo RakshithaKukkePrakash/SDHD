@@ -6,7 +6,7 @@
     <Toolchain Name="ARM GCC Generic" Selected="True">
       <Tool Name="prebuild" Command="" Options="" />
       <Tool Name="assembler" Command="arm-none-eabi-as.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=${OutputDir}/${CompileFile}.lst -g -W" />
-      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -I.\source\asw -I.\source\bsw -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -I.\source\asw -I.\source\bsw -I.\source\asw\fft_application -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
       <Tool Name="linker" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
@@ -52,18 +52,12 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitteriar.inc</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cydisabledsheets.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\DAC_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\DAC.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\DAC.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_In_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_In.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_In.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_RED_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_RED.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_RED.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_GREEN_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_GREEN.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_GREEN.h</File>
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">Generated_Source\PSoC5\cm3gcc.ld</File>
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">Generated_Source\PSoC5\Cm3RealView.scat</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Cm3Start.c</File>
@@ -97,9 +91,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareimport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareexport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareimport.scat</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_ORANGE_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_ORANGE.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_ORANGE.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Push_Button_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Push_Button.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Push_Button.h</File>
@@ -116,9 +107,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_DelSig.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_DelSig_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_DelSig_INT.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC8.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC8.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC8_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_DelSig_AMux.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_DelSig_AMux.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_DelSig_Ext_CP_Clk.c</File>
@@ -127,23 +115,37 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_DelSig_IRQ.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_DelSig_theACLK.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ADC_DelSig_theACLK.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC8_DacClk.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC8_DacClk.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC8_Wave1_DMA_dma.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC8_Wave1_DMA_dma.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC8_Wave2_DMA_dma.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC8_Wave2_DMA_dma.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC8_VDAC8.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC8_VDAC8.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC8_VDAC8_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_UART.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_UART.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC_DacClk.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC_DacClk.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC_Wave1_DMA_dma.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC_Wave1_DMA_dma.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC_Wave2_DMA_dma.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC_Wave2_DMA_dma.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC_VDAC8.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC_VDAC8.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\WaveDAC_VDAC8_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\DAC_Out_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\DAC_Out.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\DAC_Out.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn">
         <Files Root="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn">
           <File BuildType="BUILD" Toolchain="">source\asw\cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">source\asw\main.c</File>
+        </Files>
+      </Folder>
+      <Folder BuildType="STRICT" Path="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn">
+        <Files Root="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn">
+          <File BuildType="BUILD" Toolchain="">source\asw\fft_application\arm_common_tables.h</File>
+          <File BuildType="BUILD" Toolchain="">source\asw\fft_application\arm_const_structs.h</File>
+          <File BuildType="BUILD" Toolchain="">source\asw\fft_application\arm_math.h</File>
+          <File BuildType="BUILD" Toolchain="">source\asw\fft_application\fft_application.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn">

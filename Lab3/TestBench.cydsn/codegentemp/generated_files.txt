@@ -18,40 +18,43 @@
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\cyfitteriar.inc" value="HEADER;;;;;" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\cyfitter.h" value="HEADER;;;;;" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\cydisabledsheets.h" value="HEADER;;;;;" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC.c" value="SOURCE_C;CortexM3;;;;WaveDAC" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC.h" value="HEADER;;;;;WaveDAC" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC_PM.c" value="SOURCE_C;CortexM3;;;;WaveDAC" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\ADC_DelSig.c" value="SOURCE_C;CortexM3;;;;ADC_DelSig" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\ADC_DelSig.h" value="HEADER;;;;;ADC_DelSig" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\ADC_DelSig_PM.c" value="SOURCE_C;CortexM3;;;;ADC_DelSig" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\ADC_DelSig_INT.c" value="SOURCE_C;CortexM3;;;;ADC_DelSig" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC8.c" value="SOURCE_C;CortexM3;;;;WaveDAC8" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC8.h" value="HEADER;;;;;WaveDAC8" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC8_PM.c" value="SOURCE_C;CortexM3;;;;WaveDAC8" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\DAC_aliases.h" value="HEADER;;;;;DAC" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\DAC.c" value="SOURCE_C;CortexM3;;;;DAC" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\DAC.h" value="HEADER;;;;;DAC" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\ADC_In_aliases.h" value="HEADER;;;;;ADC_In" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\ADC_In.c" value="SOURCE_C;CortexM3;;;;ADC_In" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\ADC_In.h" value="HEADER;;;;;ADC_In" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\isr_UART.c" value="SOURCE_C;CortexM3;;;;isr_UART" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\isr_UART.h" value="HEADER;;;;;isr_UART" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_RED_aliases.h" value="HEADER;;;;;LED_RED" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_RED.c" value="SOURCE_C;CortexM3;;;;LED_RED" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_RED.h" value="HEADER;;;;;LED_RED" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_ORANGE_aliases.h" value="HEADER;;;;;LED_ORANGE" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_ORANGE.c" value="SOURCE_C;CortexM3;;;;LED_ORANGE" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_ORANGE.h" value="HEADER;;;;;LED_ORANGE" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_GREEN_aliases.h" value="HEADER;;;;;LED_GREEN" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_GREEN.c" value="SOURCE_C;CortexM3;;;;LED_GREEN" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_GREEN.h" value="HEADER;;;;;LED_GREEN" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\Push_Button_aliases.h" value="HEADER;;;;;Push_Button" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\Push_Button.c" value="SOURCE_C;CortexM3;;;;Push_Button" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\Push_Button.h" value="HEADER;;;;;Push_Button" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\DAC_Out_aliases.h" value="HEADER;;;;;DAC_Out" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\DAC_Out.c" value="SOURCE_C;CortexM3;;;;DAC_Out" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\DAC_Out.h" value="HEADER;;;;;DAC_Out" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\UART.c" value="SOURCE_C;CortexM3;;;;UART" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\UART.h" value="HEADER;;;;;UART" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\UART_PM.c" value="SOURCE_C;CortexM3;;;;UART" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\UART_INT.c" value="SOURCE_C;CortexM3;;;;UART" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\UART_BOOT.c" value="SOURCE_C;CortexM3;;;;UART" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\isr_UART.c" value="SOURCE_C;CortexM3;;;;isr_UART" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\isr_UART.h" value="HEADER;;;;;isr_UART" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\isr_pushButton.c" value="SOURCE_C;CortexM3;;;;isr_pushButton" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\isr_pushButton.h" value="HEADER;;;;;isr_pushButton" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\Push_Button_aliases.h" value="HEADER;;;;;Push_Button" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\Push_Button.c" value="SOURCE_C;CortexM3;;;;Push_Button" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\Push_Button.h" value="HEADER;;;;;Push_Button" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_RED_aliases.h" value="HEADER;;;;;LED_RED" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_RED.c" value="SOURCE_C;CortexM3;;;;LED_RED" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_RED.h" value="HEADER;;;;;LED_RED" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC_DacClk.c" value="SOURCE_C;CortexM3;;;;WaveDAC_DacClk" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC_DacClk.h" value="HEADER;;;;;WaveDAC_DacClk" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC_Wave1_DMA_dma.c" value="SOURCE_C;CortexM3;;;;WaveDAC_Wave1_DMA" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC_Wave1_DMA_dma.h" value="HEADER;;;;;WaveDAC_Wave1_DMA" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC_Wave2_DMA_dma.c" value="SOURCE_C;CortexM3;;;;WaveDAC_Wave2_DMA" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC_Wave2_DMA_dma.h" value="HEADER;;;;;WaveDAC_Wave2_DMA" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC_VDAC8.c" value="SOURCE_C;CortexM3;;;;WaveDAC_VDAC8" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC_VDAC8.h" value="HEADER;;;;;WaveDAC_VDAC8" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC_VDAC8_PM.c" value="SOURCE_C;CortexM3;;;;WaveDAC_VDAC8" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\ADC_DelSig_AMux.c" value="SOURCE_C;CortexM3;;;;ADC_DelSig_AMux" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\ADC_DelSig_AMux.h" value="HEADER;;;;;ADC_DelSig_AMux" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\ADC_DelSig_Ext_CP_Clk.c" value="SOURCE_C;CortexM3;;;;ADC_DelSig_Ext_CP_Clk" />
@@ -60,15 +63,6 @@
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\ADC_DelSig_IRQ.h" value="HEADER;;;;;ADC_DelSig_IRQ" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\ADC_DelSig_theACLK.c" value="SOURCE_C;CortexM3;;;;ADC_DelSig_theACLK" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\ADC_DelSig_theACLK.h" value="HEADER;;;;;ADC_DelSig_theACLK" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC8_DacClk.c" value="SOURCE_C;CortexM3;;;;WaveDAC8_DacClk" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC8_DacClk.h" value="HEADER;;;;;WaveDAC8_DacClk" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC8_Wave1_DMA_dma.c" value="SOURCE_C;CortexM3;;;;WaveDAC8_Wave1_DMA" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC8_Wave1_DMA_dma.h" value="HEADER;;;;;WaveDAC8_Wave1_DMA" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC8_Wave2_DMA_dma.c" value="SOURCE_C;CortexM3;;;;WaveDAC8_Wave2_DMA" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC8_Wave2_DMA_dma.h" value="HEADER;;;;;WaveDAC8_Wave2_DMA" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC8_VDAC8.c" value="SOURCE_C;CortexM3;;;;WaveDAC8_VDAC8" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC8_VDAC8.h" value="HEADER;;;;;WaveDAC8_VDAC8" />
-  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC8_VDAC8_PM.c" value="SOURCE_C;CortexM3;;;;WaveDAC8_VDAC8" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\UART_IntClock.c" value="SOURCE_C;CortexM3;;;;UART_IntClock" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\UART_IntClock.h" value="HEADER;;;;;UART_IntClock" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
