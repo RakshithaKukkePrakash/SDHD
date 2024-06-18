@@ -1,9 +1,9 @@
 /**
-* \file Joystick
-* \author P. Fromm
-* \date 29.8.17
+* \file statemachine.h
+* \author 
+* \date 
 *
-* \brief Watchdog - Timing supervision
+* \brief 
 *
 *
 * \note <notes>
@@ -80,22 +80,48 @@
 /*****************************************************************************/
 #include "project.h"
 #include "fft_application.h"
+     
+// Define the number of samples for the ADC and FFT
+#define SAMPLES 1024
 /*****************************************************************************/
-/* Extern global variables                                                   */
+/* Local type definitions ('typedef')                                        */
 /*****************************************************************************/
 
+// Enumeration to represent the states of the state machine
 typedef enum {
-    IDLE,
-    SAMPLING,
-    UART_TRANSFER
-}FFT_State_t;
+    IDLE,          // Idle state
+    SAMPLING,      // Sampling state
+    UART_TRANSFER  // UART transfer state
+} FFT_State_t;
 
 /*****************************************************************************/
 /* API functions                                                             */
 /*****************************************************************************/
+
+/*
+ * init_func function initializes all the Hardware used in the top design.
+ * @param : None
+ * @return : None
+ */
 void init_func();
+
+/*
+ * statemachine function to handle the state transitions and actions.
+ * @param : uint16_t *adcArray - Pointer to the array to store ADC samples.
+ * @return : None
+ */
 void statemachine(uint16_t *adcArray);
+
+/*
+ * Interrupt function that sets 'charS' and 'charO' variable to 1 if the UART 
+ * receives 's' and 'o' characters respectively from the MATLAB script.
+ */
 CY_ISR_PROTO(isr_UART);
+
+
+/*
+ * Interrupt function that sets a buttonPressed variable to 1 if the PushButton is pressed.
+ */
 CY_ISR_PROTO(isr_pushButton);
 
 

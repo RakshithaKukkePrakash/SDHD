@@ -13,11 +13,13 @@
 #include "statemachine.h"
 #include "fft_application.h"
 
+
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
 
-    uint16_t adcArray[1024] = {0};
+    uint16 adcArray[SAMPLES] = {0};
+
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     init_func();
     for(;;)

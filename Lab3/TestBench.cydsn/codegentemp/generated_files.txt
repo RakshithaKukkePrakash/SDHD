@@ -46,6 +46,12 @@
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_RED_aliases.h" value="HEADER;;;;;LED_RED" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_RED.c" value="SOURCE_C;CortexM3;;;;LED_RED" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_RED.h" value="HEADER;;;;;LED_RED" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_GREEN_aliases.h" value="HEADER;;;;;LED_GREEN" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_GREEN.c" value="SOURCE_C;CortexM3;;;;LED_GREEN" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_GREEN.h" value="HEADER;;;;;LED_GREEN" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_ORANGE_aliases.h" value="HEADER;;;;;LED_ORANGE" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_ORANGE.c" value="SOURCE_C;CortexM3;;;;LED_ORANGE" />
+  <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\LED_ORANGE.h" value="HEADER;;;;;LED_ORANGE" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC_DacClk.c" value="SOURCE_C;CortexM3;;;;WaveDAC_DacClk" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC_DacClk.h" value="HEADER;;;;;WaveDAC_DacClk" />
   <file name="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\codegentemp\WaveDAC_Wave1_DMA_dma.c" value="SOURCE_C;CortexM3;;;;WaveDAC_Wave1_DMA" />

@@ -126,6 +126,8 @@
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\DAC_Out.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_pushButton.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_UART.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\LED_GREEN.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\LED_ORANGE.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\LED_RED.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\Push_Button.lst</v>
@@ -178,13 +180,13 @@
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\DAC_Out.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_pushButton.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_UART.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\LED_GREEN.lst</v>
+<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\LED_ORANGE.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\LED_RED.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\Push_Button.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\statemachine.lst</v>
 <v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_INT.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -206,6 +208,13 @@
 <v>Lab3\TestBench\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>Lab3\TestBench\cy_pins_v2_20</v>
 <v>Lab3\TestBench\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Lab3\TestBench\Gnd_v1_0</v>
+<v>Lab3\TestBench\Gnd_v1_0\Gnd_v1_0.pdf</v>
+<v>Lab3\TestBench\LED_v1_0</v>
+<v>Lab3\TestBench\LED_v1_0\LED_v1_0.pdf</v>
+<v>Lab3\TestBench\Resistor_v1_0</v>
+<v>Lab3\TestBench\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>Lab3\TestBench\SwitchSPST_v1_0.pdf</v>
 <v>Lab3\TestBench\UART_v2_50.pdf</v>
 <v>Lab3\TestBench\WaveDAC8_v2_10.pdf</v>
 </ExpandedNodeIds>
@@ -222,6 +231,13 @@
 <v>Lab3\TestBench\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>Lab3\TestBench\cy_pins_v2_20</v>
 <v>Lab3\TestBench\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Lab3\TestBench\Gnd_v1_0</v>
+<v>Lab3\TestBench\Gnd_v1_0\Gnd_v1_0.pdf</v>
+<v>Lab3\TestBench\LED_v1_0</v>
+<v>Lab3\TestBench\LED_v1_0\LED_v1_0.pdf</v>
+<v>Lab3\TestBench\Resistor_v1_0</v>
+<v>Lab3\TestBench\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>Lab3\TestBench\SwitchSPST_v1_0.pdf</v>
 <v>Lab3\TestBench\UART_v2_50.pdf</v>
 <v>Lab3\TestBench\WaveDAC8_v2_10.pdf</v>
 </VisibleNodeIds>

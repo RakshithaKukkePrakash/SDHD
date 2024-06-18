@@ -260,6 +260,8 @@
       <Data key="1425177d-0d0e-4468-8bcc-e638e5509a9b" value="UART_RX" />
       <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="ADC_In" />
       <Data key="a0806c0a-f842-46d9-9654-9e49722fd152" value="Pin_1" />
+      <Data key="a877cb9e-28c4-49f6-98b6-94ef6022591d" value="LED_ORANGE" />
+      <Data key="aacf1098-1ac2-40ff-9af7-9f0ec90a41a1" value="LED_GREEN" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="LED_RED" />
       <Data key="ebf1c1e7-806e-4db9-9ccb-de64818aa5dc" value="LED_ORANGE" />
       <Data key="ed092b9b-d398-4703-be89-cebf998501f6" value="UART_TX" />
@@ -3394,9 +3396,19 @@
         <Data key="Port Format" value="6,3" />
       </Group>
     </Group>
-    <Group key="e851a3b9-efb8-48be-bbb8-b303b216c393">
+    <Group key="a877cb9e-28c4-49f6-98b6-94ef6022591d">
       <Group key="0">
         <Data key="Port Format" value="2,6" />
+      </Group>
+    </Group>
+    <Group key="aacf1098-1ac2-40ff-9af7-9f0ec90a41a1">
+      <Group key="0">
+        <Data key="Port Format" value="2,5" />
+      </Group>
+    </Group>
+    <Group key="e851a3b9-efb8-48be-bbb8-b303b216c393">
+      <Group key="0">
+        <Data key="Port Format" value="2,7" />
       </Group>
     </Group>
     <Group key="ebf1c1e7-806e-4db9-9ccb-de64818aa5dc">
@@ -3421,7 +3433,7 @@
     <Data key="CYDEV_DEBUGGING_DPS" value="SWD_SWV" />
     <Data key="CYDEV_DEBUGGING_XRES" value="False" />
     <Data key="CYDEV_ECC_ENABLE" value="False" />
-    <Data key="CYDEV_HEAP_SIZE" value="0x80" />
+    <Data key="CYDEV_HEAP_SIZE" value="0x2000" />
     <Data key="CYDEV_INSTRUCT_CACHE_ENABLED" value="True" />
     <Data key="CYDEV_PROTECTION_ENABLE" value="False" />
     <Data key="CYDEV_STACK_SIZE" value="0x0800" />

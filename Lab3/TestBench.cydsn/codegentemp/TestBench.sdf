@@ -1,6 +1,6 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2024-06-18T16:59:52Z")
+ (DATE "2024-06-18T21:24:17Z")
  (DESIGN "TestBench")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
@@ -194,6 +194,8 @@
     (INTERCONNECT UART_RX\(0\)_PAD UART_RX\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT Push_Button\(0\)_PAD Push_Button\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT LED_RED\(0\)_PAD LED_RED\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT LED_GREEN\(0\)_PAD LED_GREEN\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT LED_ORANGE\(0\)_PAD LED_ORANGE\(0\).pad_in (0.000:0.000:0.000))
    )
   )
  )

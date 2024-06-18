@@ -48,5 +48,7 @@ set_location "\ADC_DelSig:IRQ\" interrupt -1 -1 29
 set_io "ADC_In(0)" iocell 15 5
 # Note: port 15 is the logical name for port 8
 set_io "DAC_Out(0)" iocell 15 4
-set_io "LED_RED(0)" iocell 2 6
+set_io "LED_RED(0)" iocell 2 7
+set_io "LED_GREEN(0)" iocell 2 5
+set_io "LED_ORANGE(0)" iocell 2 6
 set_location "\ADC_DelSig:DEC\" decimatorcell -1 -1 0
