@@ -260,6 +260,13 @@
 <name v=".\TestBench.cydsn\source\bsw\statemachine.c" />
 <name v=".\TestBench.cydsn\source\bsw\statemachine.h" />
 <name v=".\TestBench.cydsn\Generated_Source\PSoC5\project.h" />
+<name v=".\TestBench.cydsn\source\asw\fft_application\arm_math.h" />
+<name v=".\TestBench.cydsn\source\asw\fft_application\fft_application.h" />
+<name v=".\TestBench.cydsn\source\asw\fft_application\arm_const_structs.h" />
+<name v=".\TestBench.cydsn\Generated_Source\PSoC5\isr_pushButton.c" />
+<name v=".\TestBench.cydsn\Generated_Source\PSoC5\Push_Button.c" />
+<name v=".\TestBench.cydsn\source\asw\fft_application\arm_common_tables.h" />
+<name v=".\TestBench.cydsn\Generated_Source\PSoC5\cm3gcc.ld" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -267,7 +274,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="683, 570" SelectedTabbedMdiWindow="6abc387b-8d1e-4084-9874-c12d312ce699"><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\TopDesign\TopDesign.cysch" Guid="6abc387b-8d1e-4084-9874-c12d312ce699" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\TestBench.cydwr" Guid="a3802f64-3069-490e-ab16-13edad57b4d3" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\asw\main.c" Guid="deba856e-c59b-44f0-983f-205e937fba3a" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\bsw\statemachine.c" Guid="96da35bc-edde-4c27-b366-644f99ee143f" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\bsw\statemachine.h" Guid="9daa51d3-c763-406f-a854-3cea213cc0ad" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\Generated_Source\PSoC5\project.h" Guid="330643f5-8566-4a31-aab8-7e5d57a4e2e8" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="894, 514" SelectedTabbedMdiWindow="96da35bc-edde-4c27-b366-644f99ee143f"><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\TopDesign\TopDesign.cysch" Guid="6abc387b-8d1e-4084-9874-c12d312ce699" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\TestBench.cydwr" Guid="a3802f64-3069-490e-ab16-13edad57b4d3" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\asw\main.c" Guid="deba856e-c59b-44f0-983f-205e937fba3a" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\bsw\statemachine.c" Guid="96da35bc-edde-4c27-b366-644f99ee143f" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\bsw\statemachine.h" Guid="9daa51d3-c763-406f-a854-3cea213cc0ad" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\Generated_Source\PSoC5\project.h" Guid="330643f5-8566-4a31-aab8-7e5d57a4e2e8" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\asw\fft_application\arm_math.h" Guid="179053eb-f95a-4012-83af-0e8e4e6f9100" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\asw\fft_application\fft_application.h" Guid="60e8b177-24da-4d48-8e2d-2c33c5c76d37" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\asw\fft_application\arm_const_structs.h" Guid="e3e6f961-bc66-4f21-950e-72d36ab2ba1c" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\Generated_Source\PSoC5\isr_pushButton.c" Guid="a2add3d9-f427-4c7c-aef0-4a79628e5a79" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\Generated_Source\PSoC5\Push_Button.c" Guid="f7f08282-396e-4b7c-adb6-de49e4ccfd04" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\source\asw\fft_application\arm_common_tables.h" Guid="4f59a4e5-8099-4b7c-a7cd-e04736d522d7" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\Lab3\TestBench.cydsn\Generated_Source\PSoC5\cm3gcc.ld" Guid="e537e17d-4107-4379-aa39-9b265e8aefe6" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

@@ -56,7 +56,7 @@ uint8_t charO = 0;
 volatile uint8_t buttonPressed = 0;
 
 // Array to store the result of the FFT calculation
-int32 fftArray[2 * SAMPLES] = {0}; 
+//int32 fftArray[2 * SAMPLES] = {0}; 
 
 /*****************************************************************************/
 /* Local function prototypes ('static')                                      */

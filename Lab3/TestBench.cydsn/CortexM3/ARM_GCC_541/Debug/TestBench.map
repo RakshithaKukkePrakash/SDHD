@@ -1138,7 +1138,7 @@ END GROUP
                 0x00001ac8        0x4 LONG 0x1ad8 __cy_region_init_ram
                 0x00001acc        0x4 LONG 0x1fff80c8 __cy_region_start_data
                 0x00001ad0        0x4 LONG 0x88 __cy_region_init_size_ram
-                0x00001ad4        0x4 LONG 0x2050 __cy_region_zero_size_ram
+                0x00001ad4        0x4 LONG 0x48 __cy_region_zero_size_ram
                 0x00001ad8                __cy_regions_end = .
                 0x00001ad8                . = ALIGN (0x8)
                 0x00001ad8                _etext = .
@@ -1193,51 +1193,49 @@ END GROUP
 .igot.plt       0x1fff8150        0x0 load address 0x00001b60
  .igot.plt      0x1fff8150        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
-.bss            0x1fff8150     0x2050 load address 0x00001b60
+.bss            0x1fff8150       0x48 load address 0x00001b60
                 0x1fff8150                PROVIDE (__bss_start__, .)
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
  .bss           0x1fff8150       0x1c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
- .bss           0x1fff816c     0x2008 .\CortexM3\ARM_GCC_541\Debug\statemachine.o
+ .bss           0x1fff816c        0x5 .\CortexM3\ARM_GCC_541\Debug\statemachine.o
                 0x1fff816c                charS
                 0x1fff816d                charO
                 0x1fff816e                buttonPressed
                 0x1fff816f                state
                 0x1fff8170                count
-                0x1fff8174                fftArray
- .bss           0x1fffa174        0x2 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART.o)
-                0x1fffa174                UART_initVar
- *fill*         0x1fffa176        0x2 
- .bss           0x1fffa178       0x18 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig.o)
-                0x1fffa188                ADC_DelSig_stopConversion
-                0x1fffa189                ADC_DelSig_convDone
-                0x1fffa18a                ADC_DelSig_initVar
-                0x1fffa18b                ADC_DelSig_started
-                0x1fffa18c                ADC_DelSig_Offset
- .bss           0x1fffa190        0x5 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC.o)
-                0x1fffa194                WaveDAC_initVar
+ .bss           0x1fff8171        0x2 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART.o)
+                0x1fff8171                UART_initVar
+ *fill*         0x1fff8173        0x1 
+ .bss           0x1fff8174       0x18 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig.o)
+                0x1fff8184                ADC_DelSig_stopConversion
+                0x1fff8185                ADC_DelSig_convDone
+                0x1fff8186                ADC_DelSig_initVar
+                0x1fff8187                ADC_DelSig_started
+                0x1fff8188                ADC_DelSig_Offset
+ .bss           0x1fff818c        0x5 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC.o)
+                0x1fff8190                WaveDAC_initVar
  *(COMMON)
- COMMON         0x1fffa195        0x1 .\CortexM3\ARM_GCC_541\Debug\statemachine.o
-                0x1fffa195                charRx
- *fill*         0x1fffa196        0x2 
- COMMON         0x1fffa198        0x4 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig.o)
-                0x1fffa198                ADC_DelSig_CountsPerVolt
-                0x1fffa1a0                . = ALIGN (0x8)
- *fill*         0x1fffa19c        0x4 
+ COMMON         0x1fff8191        0x1 .\CortexM3\ARM_GCC_541\Debug\statemachine.o
+                0x1fff8191                charRx
+ *fill*         0x1fff8192        0x2 
+ COMMON         0x1fff8194        0x4 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig.o)
+                0x1fff8194                ADC_DelSig_CountsPerVolt
+                0x1fff8198                . = ALIGN (0x8)
  *(.ram.b)
-                0x1fffa1a0                _end = .
-                0x1fffa1a0                __end = .
-                0x1fffa1a0                PROVIDE (end, .)
-                0x1fffa1a0                PROVIDE (__bss_end__, .)
+                0x1fff8198                _end = .
+                0x1fff8198                __end = .
+                0x1fff8198                PROVIDE (end, .)
+                0x1fff8198                PROVIDE (__bss_end__, .)
                 0x00001ad8                __cy_region_init_ram = LOADADDR (.data)
                 0x00000088                __cy_region_init_size_ram = (_edata - ADDR (.data))
-                0x00002050                __cy_region_zero_size_ram = (_end - _edata)
+                0x00000048                __cy_region_zero_size_ram = (_end - _edata)
 
-.heap           0x1fffa1a0     0x2000 load address 0x00001b60
-                0x1fffa1a0                . = _end
-                0x1fffc1a0                . = (. + 0x2000)
- *fill*         0x1fffa1a0     0x2000 
-                0x1fffc1a0                __cy_heap_limit = .
+.heap           0x1fff8198     0x2000 load address 0x00001b60
+                0x1fff8198                . = _end
+                0x1fffa198                . = (. + 0x2000)
+ *fill*         0x1fff8198     0x2000 
+                0x1fffa198                __cy_heap_limit = .
 
 .stack          0x20007800      0x800
                 0x20007800                __cy_stack_limit = .
@@ -1369,101 +1367,101 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x7769
+.debug_info     0x00000000     0x773b
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x154 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_info    0x00000154      0x42b .\CortexM3\ARM_GCC_541\Debug\statemachine.o
- .debug_info    0x0000057f      0x6a0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_info    0x00000c1f      0x136 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_info    0x00000d55      0x3cf .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_info    0x00001124      0x11f .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_RED.o)
- .debug_info    0x00001243      0x11f .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_GREEN.o)
- .debug_info    0x00001362      0x94e .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyDmac.o)
- .debug_info    0x00001cb0     0x1374 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyLib.o)
- .debug_info    0x00003024      0xa2a .\CortexM3\ARM_GCC_541\Debug\TestBench.a(cyPm.o)
- .debug_info    0x00003a4e      0x11f .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_ORANGE.o)
- .debug_info    0x00003b6d      0x174 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(Push_Button.o)
- .debug_info    0x00003ce1      0x60c .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART.o)
- .debug_info    0x000042ed      0x283 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART_IntClock.o)
- .debug_info    0x00004570      0x2d2 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_pushButton.o)
- .debug_info    0x00004842      0xbed .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig.o)
- .debug_info    0x0000542f       0xd3 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_INT.o)
- .debug_info    0x00005502      0x165 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_AMux.o)
- .debug_info    0x00005667      0x283 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_Ext_CP_Clk.o)
- .debug_info    0x000058ea      0x2c4 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_theACLK.o)
- .debug_info    0x00005bae      0x2d2 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_UART.o)
- .debug_info    0x00005e80      0x519 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC.o)
- .debug_info    0x00006399      0x283 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_DacClk.o)
- .debug_info    0x0000661c      0x1aa .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave1_DMA_dma.o)
- .debug_info    0x000067c6      0x1a7 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave2_DMA_dma.o)
- .debug_info    0x0000696d      0x1de .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_VDAC8.o)
- .debug_info    0x00006b4b       0x81 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyBootAsmGnu.o)
- .debug_info    0x00006bcc      0x64d .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyFlash.o)
- .debug_info    0x00007219      0x550 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CySpc.o)
+ .debug_info    0x00000154      0x3fd .\CortexM3\ARM_GCC_541\Debug\statemachine.o
+ .debug_info    0x00000551      0x6a0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_info    0x00000bf1      0x136 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x00000d27      0x3cf .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_info    0x000010f6      0x11f .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_RED.o)
+ .debug_info    0x00001215      0x11f .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_GREEN.o)
+ .debug_info    0x00001334      0x94e .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyDmac.o)
+ .debug_info    0x00001c82     0x1374 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyLib.o)
+ .debug_info    0x00002ff6      0xa2a .\CortexM3\ARM_GCC_541\Debug\TestBench.a(cyPm.o)
+ .debug_info    0x00003a20      0x11f .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_ORANGE.o)
+ .debug_info    0x00003b3f      0x174 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(Push_Button.o)
+ .debug_info    0x00003cb3      0x60c .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART.o)
+ .debug_info    0x000042bf      0x283 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART_IntClock.o)
+ .debug_info    0x00004542      0x2d2 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_pushButton.o)
+ .debug_info    0x00004814      0xbed .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig.o)
+ .debug_info    0x00005401       0xd3 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_INT.o)
+ .debug_info    0x000054d4      0x165 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_AMux.o)
+ .debug_info    0x00005639      0x283 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_Ext_CP_Clk.o)
+ .debug_info    0x000058bc      0x2c4 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_theACLK.o)
+ .debug_info    0x00005b80      0x2d2 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_UART.o)
+ .debug_info    0x00005e52      0x519 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC.o)
+ .debug_info    0x0000636b      0x283 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_DacClk.o)
+ .debug_info    0x000065ee      0x1aa .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave1_DMA_dma.o)
+ .debug_info    0x00006798      0x1a7 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave2_DMA_dma.o)
+ .debug_info    0x0000693f      0x1de .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_VDAC8.o)
+ .debug_info    0x00006b1d       0x81 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyBootAsmGnu.o)
+ .debug_info    0x00006b9e      0x64d .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyFlash.o)
+ .debug_info    0x000071eb      0x550 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CySpc.o)
 
-.debug_abbrev   0x00000000     0x219a
+.debug_abbrev   0x00000000     0x217b
  *(.debug_abbrev)
  .debug_abbrev  0x00000000       0xe9 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_abbrev  0x000000e9      0x13b .\CortexM3\ARM_GCC_541\Debug\statemachine.o
- .debug_abbrev  0x00000224      0x22d .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_abbrev  0x00000451       0x77 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_abbrev  0x000004c8      0x1e8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_abbrev  0x000006b0       0x90 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_RED.o)
- .debug_abbrev  0x00000740       0x90 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_GREEN.o)
- .debug_abbrev  0x000007d0      0x1b2 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyDmac.o)
- .debug_abbrev  0x00000982      0x254 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyLib.o)
- .debug_abbrev  0x00000bd6      0x1ab .\CortexM3\ARM_GCC_541\Debug\TestBench.a(cyPm.o)
- .debug_abbrev  0x00000d81       0x90 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_ORANGE.o)
- .debug_abbrev  0x00000e11       0x90 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(Push_Button.o)
- .debug_abbrev  0x00000ea1      0x175 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART.o)
- .debug_abbrev  0x00001016      0x139 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART_IntClock.o)
- .debug_abbrev  0x0000114f      0x173 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_pushButton.o)
- .debug_abbrev  0x000012c2      0x1eb .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig.o)
- .debug_abbrev  0x000014ad       0x42 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_INT.o)
- .debug_abbrev  0x000014ef       0xb1 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_AMux.o)
- .debug_abbrev  0x000015a0      0x139 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_Ext_CP_Clk.o)
- .debug_abbrev  0x000016d9      0x121 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_theACLK.o)
- .debug_abbrev  0x000017fa      0x173 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_UART.o)
- .debug_abbrev  0x0000196d      0x114 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC.o)
- .debug_abbrev  0x00001a81      0x139 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_DacClk.o)
- .debug_abbrev  0x00001bba       0xcd .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave1_DMA_dma.o)
- .debug_abbrev  0x00001c87       0xcd .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave2_DMA_dma.o)
- .debug_abbrev  0x00001d54       0xf7 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_VDAC8.o)
- .debug_abbrev  0x00001e4b       0x14 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyBootAsmGnu.o)
- .debug_abbrev  0x00001e5f      0x1a7 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyFlash.o)
- .debug_abbrev  0x00002006      0x194 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CySpc.o)
+ .debug_abbrev  0x000000e9      0x11c .\CortexM3\ARM_GCC_541\Debug\statemachine.o
+ .debug_abbrev  0x00000205      0x22d .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_abbrev  0x00000432       0x77 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_abbrev  0x000004a9      0x1e8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_abbrev  0x00000691       0x90 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_RED.o)
+ .debug_abbrev  0x00000721       0x90 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_GREEN.o)
+ .debug_abbrev  0x000007b1      0x1b2 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyDmac.o)
+ .debug_abbrev  0x00000963      0x254 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyLib.o)
+ .debug_abbrev  0x00000bb7      0x1ab .\CortexM3\ARM_GCC_541\Debug\TestBench.a(cyPm.o)
+ .debug_abbrev  0x00000d62       0x90 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_ORANGE.o)
+ .debug_abbrev  0x00000df2       0x90 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(Push_Button.o)
+ .debug_abbrev  0x00000e82      0x175 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART.o)
+ .debug_abbrev  0x00000ff7      0x139 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART_IntClock.o)
+ .debug_abbrev  0x00001130      0x173 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_pushButton.o)
+ .debug_abbrev  0x000012a3      0x1eb .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig.o)
+ .debug_abbrev  0x0000148e       0x42 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_INT.o)
+ .debug_abbrev  0x000014d0       0xb1 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_AMux.o)
+ .debug_abbrev  0x00001581      0x139 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_Ext_CP_Clk.o)
+ .debug_abbrev  0x000016ba      0x121 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_theACLK.o)
+ .debug_abbrev  0x000017db      0x173 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_UART.o)
+ .debug_abbrev  0x0000194e      0x114 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC.o)
+ .debug_abbrev  0x00001a62      0x139 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_DacClk.o)
+ .debug_abbrev  0x00001b9b       0xcd .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave1_DMA_dma.o)
+ .debug_abbrev  0x00001c68       0xcd .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave2_DMA_dma.o)
+ .debug_abbrev  0x00001d35       0xf7 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_VDAC8.o)
+ .debug_abbrev  0x00001e2c       0x14 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00001e40      0x1a7 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyFlash.o)
+ .debug_abbrev  0x00001fe7      0x194 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CySpc.o)
 
-.debug_line     0x00000000     0x3357
+.debug_line     0x00000000     0x334a
  *(.debug_line)
  .debug_line    0x00000000      0x197 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_line    0x00000197      0x29a .\CortexM3\ARM_GCC_541\Debug\statemachine.o
- .debug_line    0x00000431      0x225 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_line    0x00000656      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_line    0x00000797      0x241 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_line    0x000009d8       0x94 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_RED.o)
- .debug_line    0x00000a6c       0x96 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_GREEN.o)
- .debug_line    0x00000b02      0x2e4 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyDmac.o)
- .debug_line    0x00000de6      0x816 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyLib.o)
- .debug_line    0x000015fc      0x367 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(cyPm.o)
- .debug_line    0x00001963       0x97 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_ORANGE.o)
- .debug_line    0x000019fa       0xbc .\CortexM3\ARM_GCC_541\Debug\TestBench.a(Push_Button.o)
- .debug_line    0x00001ab6      0x2bc .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART.o)
- .debug_line    0x00001d72      0x17c .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART_IntClock.o)
- .debug_line    0x00001eee      0x13b .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_pushButton.o)
- .debug_line    0x00002029      0x3e4 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig.o)
- .debug_line    0x0000240d       0x87 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_INT.o)
- .debug_line    0x00002494       0xb3 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_AMux.o)
- .debug_line    0x00002547      0x184 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_Ext_CP_Clk.o)
- .debug_line    0x000026cb      0x1a4 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_theACLK.o)
- .debug_line    0x0000286f      0x135 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_UART.o)
- .debug_line    0x000029a4      0x151 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC.o)
- .debug_line    0x00002af5      0x17d .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_DacClk.o)
- .debug_line    0x00002c72       0x8e .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave1_DMA_dma.o)
- .debug_line    0x00002d00       0x8e .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave2_DMA_dma.o)
- .debug_line    0x00002d8e       0xe9 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_VDAC8.o)
- .debug_line    0x00002e77       0x66 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyBootAsmGnu.o)
- .debug_line    0x00002edd      0x21a .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyFlash.o)
- .debug_line    0x000030f7      0x260 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CySpc.o)
+ .debug_line    0x00000197      0x28d .\CortexM3\ARM_GCC_541\Debug\statemachine.o
+ .debug_line    0x00000424      0x225 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_line    0x00000649      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x0000078a      0x241 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_line    0x000009cb       0x94 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_RED.o)
+ .debug_line    0x00000a5f       0x96 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_GREEN.o)
+ .debug_line    0x00000af5      0x2e4 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyDmac.o)
+ .debug_line    0x00000dd9      0x816 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyLib.o)
+ .debug_line    0x000015ef      0x367 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(cyPm.o)
+ .debug_line    0x00001956       0x97 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_ORANGE.o)
+ .debug_line    0x000019ed       0xbc .\CortexM3\ARM_GCC_541\Debug\TestBench.a(Push_Button.o)
+ .debug_line    0x00001aa9      0x2bc .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART.o)
+ .debug_line    0x00001d65      0x17c .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART_IntClock.o)
+ .debug_line    0x00001ee1      0x13b .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_pushButton.o)
+ .debug_line    0x0000201c      0x3e4 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig.o)
+ .debug_line    0x00002400       0x87 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_INT.o)
+ .debug_line    0x00002487       0xb3 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_AMux.o)
+ .debug_line    0x0000253a      0x184 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_Ext_CP_Clk.o)
+ .debug_line    0x000026be      0x1a4 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_theACLK.o)
+ .debug_line    0x00002862      0x135 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_UART.o)
+ .debug_line    0x00002997      0x151 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC.o)
+ .debug_line    0x00002ae8      0x17d .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_DacClk.o)
+ .debug_line    0x00002c65       0x8e .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave1_DMA_dma.o)
+ .debug_line    0x00002cf3       0x8e .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave2_DMA_dma.o)
+ .debug_line    0x00002d81       0xe9 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_VDAC8.o)
+ .debug_line    0x00002e6a       0x66 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyBootAsmGnu.o)
+ .debug_line    0x00002ed0      0x21a .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyFlash.o)
+ .debug_line    0x000030ea      0x260 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CySpc.o)
 
 .debug_frame    0x00000000     0x2030
  *(.debug_frame)
@@ -1500,63 +1498,63 @@ END GROUP
  .debug_frame   0x00001fe8       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
  .debug_frame   0x00002010       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
 
-.debug_str      0x00000000     0x2d37
+.debug_str      0x00000000     0x2d2e
  *(.debug_str)
  .debug_str     0x00000000      0x188 .\CortexM3\ARM_GCC_541\Debug\main.o
                                 0x1d0 (size before relaxing)
- .debug_str     0x00000188      0x1b0 .\CortexM3\ARM_GCC_541\Debug\statemachine.o
-                                0x37d (size before relaxing)
- .debug_str     0x00000338      0x210 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_str     0x00000188      0x1a7 .\CortexM3\ARM_GCC_541\Debug\statemachine.o
+                                0x36e (size before relaxing)
+ .debug_str     0x0000032f      0x210 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
                                 0x39d (size before relaxing)
- .debug_str     0x00000548       0x75 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_str     0x0000053f       0x75 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
                                 0x1d5 (size before relaxing)
- .debug_str     0x000005bd      0x154 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_str     0x000005b4      0x154 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
                                 0x30b (size before relaxing)
- .debug_str     0x00000711       0x67 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_RED.o)
+ .debug_str     0x00000708       0x67 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_RED.o)
                                 0x1dd (size before relaxing)
- .debug_str     0x00000778       0x5f .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_GREEN.o)
+ .debug_str     0x0000076f       0x5f .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_GREEN.o)
                                 0x1e7 (size before relaxing)
- .debug_str     0x000007d7      0x384 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyDmac.o)
+ .debug_str     0x000007ce      0x384 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyDmac.o)
                                 0x53b (size before relaxing)
- .debug_str     0x00000b5b      0x7f4 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyLib.o)
+ .debug_str     0x00000b52      0x7f4 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyLib.o)
                                 0xa38 (size before relaxing)
- .debug_str     0x0000134f      0x365 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(cyPm.o)
+ .debug_str     0x00001346      0x365 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(cyPm.o)
                                 0x724 (size before relaxing)
- .debug_str     0x000016b4       0x63 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_ORANGE.o)
+ .debug_str     0x000016ab       0x63 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(LED_ORANGE.o)
                                 0x1ec (size before relaxing)
- .debug_str     0x00001717       0x9f .\CortexM3\ARM_GCC_541\Debug\TestBench.a(Push_Button.o)
+ .debug_str     0x0000170e       0x9f .\CortexM3\ARM_GCC_541\Debug\TestBench.a(Push_Button.o)
                                 0x239 (size before relaxing)
- .debug_str     0x000017b6      0x26c .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART.o)
+ .debug_str     0x000017ad      0x26c .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART.o)
                                 0x466 (size before relaxing)
- .debug_str     0x00001a22      0x183 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART_IntClock.o)
+ .debug_str     0x00001a19      0x183 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(UART_IntClock.o)
                                 0x327 (size before relaxing)
- .debug_str     0x00001ba5      0x14d .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_pushButton.o)
+ .debug_str     0x00001b9c      0x14d .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_pushButton.o)
                                 0x315 (size before relaxing)
- .debug_str     0x00001cf2      0x429 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig.o)
+ .debug_str     0x00001ce9      0x429 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig.o)
                                 0x6d9 (size before relaxing)
- .debug_str     0x0000211b       0x68 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_INT.o)
+ .debug_str     0x00002112       0x68 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_INT.o)
                                 0x1d4 (size before relaxing)
- .debug_str     0x00002183       0x7b .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_AMux.o)
+ .debug_str     0x0000217a       0x7b .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_AMux.o)
                                 0x221 (size before relaxing)
- .debug_str     0x000021fe      0x170 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_Ext_CP_Clk.o)
+ .debug_str     0x000021f5      0x170 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_Ext_CP_Clk.o)
                                 0x387 (size before relaxing)
- .debug_str     0x0000236e      0x1a3 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_theACLK.o)
+ .debug_str     0x00002365      0x1a3 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(ADC_DelSig_theACLK.o)
                                 0x3b4 (size before relaxing)
- .debug_str     0x00002511       0xe9 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_UART.o)
+ .debug_str     0x00002508       0xe9 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(isr_UART.o)
                                 0x2c1 (size before relaxing)
- .debug_str     0x000025fa      0x216 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC.o)
+ .debug_str     0x000025f1      0x216 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC.o)
                                 0x40f (size before relaxing)
- .debug_str     0x00002810      0x142 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_DacClk.o)
+ .debug_str     0x00002807      0x142 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_DacClk.o)
                                 0x333 (size before relaxing)
- .debug_str     0x00002952       0xa3 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave1_DMA_dma.o)
+ .debug_str     0x00002949       0xa3 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave1_DMA_dma.o)
                                 0x28d (size before relaxing)
- .debug_str     0x000029f5       0x68 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave2_DMA_dma.o)
+ .debug_str     0x000029ec       0x68 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_Wave2_DMA_dma.o)
                                 0x28d (size before relaxing)
- .debug_str     0x00002a5d       0x73 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_VDAC8.o)
+ .debug_str     0x00002a54       0x73 .\CortexM3\ARM_GCC_541\Debug\TestBench.a(WaveDAC_VDAC8.o)
                                 0x260 (size before relaxing)
- .debug_str     0x00002ad0      0x1bb .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyFlash.o)
+ .debug_str     0x00002ac7      0x1bb .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CyFlash.o)
                                 0x3b1 (size before relaxing)
- .debug_str     0x00002c8b       0xac .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CySpc.o)
+ .debug_str     0x00002c82       0xac .\CortexM3\ARM_GCC_541\Debug\TestBench.a(CySpc.o)
                                 0x329 (size before relaxing)
 
 .debug_loc      0x00000000     0x397c
