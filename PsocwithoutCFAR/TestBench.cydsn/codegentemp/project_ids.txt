@@ -1,0 +1,6 @@
+C:\Sandbox\Sem2\SDHD\Psoc\TestBench.cydsn\TestBench.cyprj|3ddba749-3997-44d0-9cb9-acee9e41a8d2
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|d69aa496-9de0-4e2e-8c25-77472e19f5c7
+C:\Users\acer\OneDrive\文档\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|27668532-5ec2-43b3-a723-c69e31a9d464
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|27203471-1089-4f07-b29b-b3f9d5f3911f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|4ebd29bc-cf3e-4532-9d5e-a9b87a2eac02
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|58a125f4-6624-4884-891b-7cd4c195ce5b

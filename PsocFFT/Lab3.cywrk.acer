@@ -44,33 +44,7 @@
 <v>Lab3\TestBench\Generated_Source\PSoC5</v>
 <v>Lab3\TestBench\Generated_Source\PSoC5\Push_Button</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>Lab3</v>
-<v>Lab3\TestBench</v>
-<v>Lab3\TestBench\TopDesign</v>
-<v>Lab3\TestBench\TestBench.cydwr</v>
-<v>Lab3\TestBench\TestBench.cydwr\Pins</v>
-<v>Lab3\TestBench\TestBench.cydwr\Analog</v>
-<v>Lab3\TestBench\TestBench.cydwr\Clocks</v>
-<v>Lab3\TestBench\TestBench.cydwr\Interrupts</v>
-<v>Lab3\TestBench\TestBench.cydwr\DMA</v>
-<v>Lab3\TestBench\TestBench.cydwr\System</v>
-<v>Lab3\TestBench\TestBench.cydwr\Directives</v>
-<v>Lab3\TestBench\TestBench.cydwr\Flash Security</v>
-<v>Lab3\TestBench\TestBench.cydwr\EEPROM</v>
-<v>Lab3\TestBench\source</v>
-<v>Lab3\TestBench\source\asw</v>
-<v>Lab3\TestBench\source\asw\fft_application</v>
-<v>Lab3\TestBench\source\asw\fft_application\arm_common_tables.h</v>
-<v>Lab3\TestBench\source\asw\fft_application\arm_const_structs.h</v>
-<v>Lab3\TestBench\source\asw\fft_application\arm_math.h</v>
-<v>Lab3\TestBench\source\asw\fft_application\fft_application.h</v>
-<v>Lab3\TestBench\source\asw\cyapicallbacks.h</v>
-<v>Lab3\TestBench\source\asw\main.c</v>
-<v>Lab3\TestBench\source\bsw</v>
-<v>Lab3\TestBench\source\bsw\statemachine.c</v>
-<v>Lab3\TestBench\source\bsw\statemachine.h</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
@@ -79,12 +53,7 @@
 <v>Lab3\TestBench\TopDesign</v>
 <v>Lab3\TestBench\TopDesign\TopDesign.cysch</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>Lab3</v>
-<v>Lab3\TestBench</v>
-<v>Lab3\TestBench\TopDesign</v>
-<v>Lab3\TestBench\TopDesign\TopDesign.cysch</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
@@ -141,33 +110,7 @@
 <v>Lab3\TestBench\TestBench.rpt</v>
 <v>Lab3\TestBench\TestBench_timing.html</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>Lab3</v>
-<v>Lab3\TestBench</v>
-<v>Lab3\TestBench\CortexM3</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_AMux.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_Ext_CP_Clk.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_INT.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_IRQ.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_PM.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_DelSig_theACLK.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_In.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>Lab3\TestBench\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
 <TreeKeysV2>
@@ -198,29 +141,7 @@
 <v>Lab3\TestBench\UART_v2_50.pdf</v>
 <v>Lab3\TestBench\WaveDAC8_v2_10.pdf</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>Lab3</v>
-<v>Lab3\TestBench</v>
-<v>Lab3\TestBench\PSoC 5LP Architecture TRM</v>
-<v>Lab3\TestBench\CY8C58LP Family Datasheet</v>
-<v>Lab3\TestBench\System Reference Guides</v>
-<v>Lab3\TestBench\System Reference Guides\cy_boot_v6_0</v>
-<v>Lab3\TestBench\ADC_DelSig_v3_30.pdf</v>
-<v>Lab3\TestBench\cy_constant_v1_0.pdf</v>
-<v>Lab3\TestBench\cy_isr_v1_70</v>
-<v>Lab3\TestBench\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
-<v>Lab3\TestBench\cy_pins_v2_20</v>
-<v>Lab3\TestBench\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Lab3\TestBench\Gnd_v1_0</v>
-<v>Lab3\TestBench\Gnd_v1_0\Gnd_v1_0.pdf</v>
-<v>Lab3\TestBench\LED_v1_0</v>
-<v>Lab3\TestBench\LED_v1_0\LED_v1_0.pdf</v>
-<v>Lab3\TestBench\Resistor_v1_0</v>
-<v>Lab3\TestBench\Resistor_v1_0\Resistor_v1_0.pdf</v>
-<v>Lab3\TestBench\SwitchSPST_v1_0.pdf</v>
-<v>Lab3\TestBench\UART_v2_50.pdf</v>
-<v>Lab3\TestBench\WaveDAC8_v2_10.pdf</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
 </CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
@@ -248,7 +169,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="918, 534" SelectedTabbedMdiWindow="4ef9b41b-996d-4a56-b357-208a6dcb1479"><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\PsocFFT\TestBench.cydsn\TopDesign\TopDesign.cysch" Guid="edebbee0-d5e9-4213-b22f-0906a80a1971" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\PsocFFT\TestBench.cydsn\source\asw\main.c" Guid="e047a3c2-8774-4002-96db-60e490625f3e" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\PsocFFT\TestBench.cydsn\source\bsw\statemachine.c" Guid="4ef9b41b-996d-4a56-b357-208a6dcb1479" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\PsocFFT\TestBench.cydsn\source\bsw\statemachine.h" Guid="616bee1e-4be9-4eb3-ba43-e3affea399c9" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\PsocFFT\TestBench.cydsn\Generated_Source\PSoC5\ADC_DelSig.c" Guid="04685b3c-fa18-46ce-b90a-9d0fa9bc53a3" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\PsocFFT\TestBench.cydsn\Generated_Source\PSoC5\ADC_DelSig.h" Guid="6fb464c0-5c28-4759-81ca-813a759c849b" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="be389097-de6b-4648-a141-810654c7ce70" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\PsocFFT\TestBench.cydsn\TestBench.cydwr" Guid="54c5e40c-f46f-4c07-9aef-8c77adbc93fb" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="918, 502" SelectedTabbedMdiWindow="e047a3c2-8774-4002-96db-60e490625f3e"><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\PsocFFT\TestBench.cydsn\TopDesign\TopDesign.cysch" Guid="edebbee0-d5e9-4213-b22f-0906a80a1971" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\PsocFFT\TestBench.cydsn\source\asw\main.c" Guid="e047a3c2-8774-4002-96db-60e490625f3e" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\PsocFFT\TestBench.cydsn\source\bsw\statemachine.c" Guid="4ef9b41b-996d-4a56-b357-208a6dcb1479" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\PsocFFT\TestBench.cydsn\source\bsw\statemachine.h" Guid="616bee1e-4be9-4eb3-ba43-e3affea399c9" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\PsocFFT\TestBench.cydsn\Generated_Source\PSoC5\ADC_DelSig.c" Guid="04685b3c-fa18-46ce-b90a-9d0fa9bc53a3" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\PsocFFT\TestBench.cydsn\Generated_Source\PSoC5\ADC_DelSig.h" Guid="6fb464c0-5c28-4759-81ca-813a759c849b" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="be389097-de6b-4648-a141-810654c7ce70" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\PsocFFT\TestBench.cydsn\TestBench.cydwr" Guid="54c5e40c-f46f-4c07-9aef-8c77adbc93fb" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
