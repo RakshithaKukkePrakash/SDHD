@@ -40,43 +40,7 @@
 <v>Ex2Uint8toMatlab\Ex2\Generated_Source</v>
 <v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>Ex2Uint8toMatlab</v>
-<v>Ex2Uint8toMatlab\Ex2</v>
-<v>Ex2Uint8toMatlab\Ex2\TopDesign</v>
-<v>Ex2Uint8toMatlab\Ex2\Ex2.cydwr</v>
-<v>Ex2Uint8toMatlab\Ex2\Ex2.cydwr\Pins</v>
-<v>Ex2Uint8toMatlab\Ex2\Ex2.cydwr\Analog</v>
-<v>Ex2Uint8toMatlab\Ex2\Ex2.cydwr\Clocks</v>
-<v>Ex2Uint8toMatlab\Ex2\Ex2.cydwr\Interrupts</v>
-<v>Ex2Uint8toMatlab\Ex2\Ex2.cydwr\DMA</v>
-<v>Ex2Uint8toMatlab\Ex2\Ex2.cydwr\System</v>
-<v>Ex2Uint8toMatlab\Ex2\Ex2.cydwr\Directives</v>
-<v>Ex2Uint8toMatlab\Ex2\Ex2.cydwr\Flash Security</v>
-<v>Ex2Uint8toMatlab\Ex2\Ex2.cydwr\EEPROM</v>
-<v>Ex2Uint8toMatlab\Ex2\Header Files</v>
-<v>Ex2Uint8toMatlab\Ex2\Header Files\cyapicallbacks.h</v>
-<v>Ex2Uint8toMatlab\Ex2\Source Files</v>
-<v>Ex2Uint8toMatlab\Ex2\Source Files\main.c</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\cy_boot</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\UART</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\UART_IntClock</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\cycodeshareexport.ld</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\cycodeshareimport.ld</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\cycodeshareimport.scat</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\cydevice.h</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\cydevice_trm.h</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\cydevicegnu.inc</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\cydeviceiar.inc</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\cydevicerv.inc</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
-<v>Ex2Uint8toMatlab\Ex2\Generated_Source\PSoC5\cydisabledsheets.h</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
@@ -85,12 +49,7 @@
 <v>Ex2Uint8toMatlab\Ex2\TopDesign</v>
 <v>Ex2Uint8toMatlab\Ex2\TopDesign\TopDesign.cysch</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>Ex2Uint8toMatlab</v>
-<v>Ex2Uint8toMatlab\Ex2</v>
-<v>Ex2Uint8toMatlab\Ex2\TopDesign</v>
-<v>Ex2Uint8toMatlab\Ex2\TopDesign\TopDesign.cysch</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
@@ -124,37 +83,7 @@
 <v>Ex2Uint8toMatlab\Ex2\Ex2.rpt</v>
 <v>Ex2Uint8toMatlab\Ex2\Ex2_timing.html</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>Ex2Uint8toMatlab</v>
-<v>Ex2Uint8toMatlab\Ex2</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_INT.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_IntClock.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Ex2.elf</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Ex2.hex</v>
-<v>Ex2Uint8toMatlab\Ex2\CortexM3\ARM_GCC_541\Debug\Ex2.map</v>
-<v>Ex2Uint8toMatlab\Ex2\Ex2.gpdsc</v>
-<v>Ex2Uint8toMatlab\Ex2\Ex2.rpt</v>
-<v>Ex2Uint8toMatlab\Ex2\Ex2_timing.html</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
 <TreeKeysV2>
@@ -168,14 +97,12 @@
 <v>Ex2Uint8toMatlab\Ex2\PSoC 5LP Architecture TRM</v>
 <v>Ex2Uint8toMatlab\Ex2\CY8C58LP Family Datasheet</v>
 <v>Ex2Uint8toMatlab\Ex2\System Reference Guides</v>
+<v>Ex2Uint8toMatlab\Ex2\System Reference Guides\cy_boot_v6_0</v>
+<v>Ex2Uint8toMatlab\Ex2\cy_pins_v2_20</v>
+<v>Ex2Uint8toMatlab\Ex2\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Ex2Uint8toMatlab\Ex2\UART_v2_50.pdf</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>Ex2Uint8toMatlab</v>
-<v>Ex2Uint8toMatlab\Ex2</v>
-<v>Ex2Uint8toMatlab\Ex2\PSoC 5LP Architecture TRM</v>
-<v>Ex2Uint8toMatlab\Ex2\CY8C58LP Family Datasheet</v>
-<v>Ex2Uint8toMatlab\Ex2\System Reference Guides</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
 </CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
@@ -194,7 +121,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1033, 493" SelectedTabbedMdiWindow="3161e88e-582c-43b1-8b1b-36c60c655369"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="be389097-de6b-4648-a141-810654c7ce70" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\TxtoMATLAB\Ex2Uint8toMatlab\Ex2.cydsn\TopDesign\TopDesign.cysch" Guid="215ca6d4-6041-4bc3-83fa-d11f368dedbf" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\TxtoMATLAB\Ex2Uint8toMatlab\Ex2.cydsn\main.c" Guid="3161e88e-582c-43b1-8b1b-36c60c655369" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\TxtoMATLAB\Ex2Uint8toMatlab\Ex2.cydsn\Ex2.cydwr" Guid="720e54ab-8e2e-44fd-a281-145f3b9a3950" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="918, 623" SelectedTabbedMdiWindow="3161e88e-582c-43b1-8b1b-36c60c655369"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="be389097-de6b-4648-a141-810654c7ce70" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\TxtoMATLAB\Ex2Uint8toMatlab\Ex2.cydsn\TopDesign\TopDesign.cysch" Guid="215ca6d4-6041-4bc3-83fa-d11f368dedbf" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\TxtoMATLAB\Ex2Uint8toMatlab\Ex2.cydsn\main.c" Guid="3161e88e-582c-43b1-8b1b-36c60c655369" /><DocumentWindow Key="C:\Sandbox\Sem2\SDHD\Git\SDHD\TxtoMATLAB\Ex2Uint8toMatlab\Ex2.cydsn\Ex2.cydwr" Guid="720e54ab-8e2e-44fd-a281-145f3b9a3950" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

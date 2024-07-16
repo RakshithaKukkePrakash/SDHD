@@ -25,6 +25,7 @@ int main(void)
     for(;;)
     {
         statemachine(adcArray);
+        //statemachine_cfar(adcArray);
     }  
 }
 

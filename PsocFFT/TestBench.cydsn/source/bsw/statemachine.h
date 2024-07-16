@@ -83,6 +83,10 @@
      
 // Define the number of samples for the ADC and FFT
 #define SAMPLES 1024
+#define N 512 // Number of Samples
+#define NG 1  // Number of Guard Cells
+#define NR 10 // Number of Reference Cells
+#define PFA 1e-6 // Probability of False Alarm
 /*****************************************************************************/
 /* Local type definitions ('typedef')                                        */
 /*****************************************************************************/
@@ -104,14 +108,15 @@ typedef enum {
  * @return : None
  */
 void init_func();
-
+void ca_cfar(int32 *fft_result, int32_t *threshold_cfar, int32_t *signal_cfar);
+void uart_transfer(uint16_t *adcArray, int32 *fftArray);
 /*
  * statemachine function to handle the state transitions and actions.
  * @param : uint16_t *adcArray - Pointer to the array to store ADC samples.
  * @return : None
  */
 void statemachine(uint16_t *adcArray);
-
+void statemachine_cfar(uint16_t *adcArray);
 /*
  * Interrupt function that sets 'charS' and 'charO' variable to 1 if the UART 
  * receives 's' and 'o' characters respectively from the MATLAB script.

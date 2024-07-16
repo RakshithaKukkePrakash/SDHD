@@ -57,7 +57,8 @@ volatile uint8_t buttonPressed = 0;
 
 // Array to store the result of the FFT calculation
 int32 fftArray[2 * SAMPLES] = {0}; 
-
+int32_t threshold_cfar[N];
+int32_t signal_cfar[N];
 /*****************************************************************************/
 /* Local function prototypes ('static')                                      */
 /*****************************************************************************/
@@ -120,10 +121,85 @@ CY_ISR(isr_pushButton)
     //  the value of the interrupt status register allowing determination of which
     //  pins generated an interrupt event.
     Push_Button_ClearInterrupt();
+    buttonPressed = 1;
+}
 
-    // Set buttonPressed flag if not already set
-    if (buttonPressed == 0) {
-        buttonPressed = 1;
+// Function to compare integers (needed for qsort)
+int compare_int32(const void *a, const void *b) {
+    return (*(int32_t *)a - *(int32_t *)b);
+}
+
+// Function to find the median of an array
+int32_t median_value(int32_t *array, int size) {
+    // Sort the array
+    qsort(array, size, sizeof(int32_t), compare_int32);
+
+    // Find the median
+    if (size % 2 == 1) {
+        // Odd number of elements
+        return array[size / 2];
+    } else {
+        // Even number of elements, return average of middle two
+        return (array[size / 2 - 1] + array[size / 2]) / 2;
+    }
+}
+void ca_cfar(int32 *fft_result, int32_t *threshold_cfar, int32_t *signal_cfar) 
+{
+
+    // Variables for CFAR calculation
+    double alpha = NR * (pow(PFA, -1.0/NR) - 1);
+    double noise_level;
+    double threshold;
+    double noise_threshold = 2.0;  // Can be adjusted
+
+    // CFAR processing loop
+    for (int i = NR + NG; i < N - (NR + NG); i++) {
+        noise_level = 0.0;
+
+        // Calculate noise level using leading and lagging windows
+        for (int j = i - NR - NG; j <= i - NG - 1; j++) {
+            noise_level += fft_result[j];
+        }
+        for (int j = i + NG + 1; j <= i + NR + NG; j++) {
+            noise_level += fft_result[j];
+        }
+
+        // Calculate threshold
+        threshold = alpha * (noise_level / (2.0 * NR));
+
+        // Store threshold in threshold_cfar array
+        threshold_cfar[i] = (int32_t)threshold;
+
+        // Determine if FFT result exceeds threshold and update signal_cfar
+        if ((double)fft_result[i] > threshold) {
+            signal_cfar[i] = fft_result[i];
+        } else {
+            signal_cfar[i] = 0;
+        }
+    }
+
+    // Apply noise threshold and further refine detection if necessary
+    int32_t noise_threshold_value = (int32_t)(noise_threshold * median_value(signal_cfar, N)); // Median function is an approximation of MATLAB median
+    for (int i = 0; i < N; i++) {
+        if (signal_cfar[i] < noise_threshold_value) {
+            signal_cfar[i] = 0;
+        }
+    }
+}
+
+void uart_transfer(uint16_t *adcArray, int32 *fftArray){
+        // Send ADC samples over UART
+    for (uint16_t i = 0; i < 1024; i++) {
+        UART_PutChar(adcArray[i]);
+        UART_PutChar(adcArray[i] >> 8);
+    }
+
+    // Send FFT results over UART
+    for (uint32_t i = 0; i < 2048; i++) {
+        UART_PutChar(fftArray[i]);
+        UART_PutChar(fftArray[i] >> 8);
+        UART_PutChar(fftArray[i] >> 16);
+        UART_PutChar(fftArray[i] >> 24);
     }
 }
 
@@ -132,6 +208,104 @@ CY_ISR(isr_pushButton)
  * @param : uint16_t *adcArray - Pointer to the array to store ADC samples.
  * @return : None
  */
+void statemachine_cfar(uint16_t *adcArray)
+{
+    switch (state)
+    {
+        case IDLE:
+            // All LEDs OFF to indicate IDLE state
+            LED_RED_Write(0);
+            LED_ORANGE_Write(0);
+            LED_GREEN_Write(0);
+
+            // Reset counter
+            count = 0;  
+
+            // If button is pressed, transition to SAMPLING state
+            if (buttonPressed == 1) {
+                state = SAMPLING;
+                buttonPressed = 0;
+            }
+            break;
+        
+        case SAMPLING:
+            
+            // Turn on orange LED to indicate SAMPLING state
+            LED_RED_Write(0);
+            LED_ORANGE_Write(1);
+            LED_GREEN_Write(0);
+            
+            
+            // Sample ADC values and store in adcArray
+            for (uint16_t i = 0; i < 1024; i++) {
+                ADC_DelSig_IsEndConversion(ADC_DelSig_WAIT_FOR_RESULT);
+                adcArray[i] = (uint16_t)ADC_DelSig_GetResult32();
+            }
+            
+            
+            
+            // If 's' character received, transition to UART_TRANSFER state
+            if (charS) {
+                state = UART_TRANSFER;
+                charS = 0;
+            }
+            
+            break;
+            
+            case UART_TRANSFER:
+            
+            // Turn on green LED to indicate UART_TRANSFER state
+            LED_RED_Write(0);
+            LED_ORANGE_Write(0);
+            LED_GREEN_Write(1);
+            
+            // Perform FFT on the ADC samples
+            fft_app(adcArray, fftArray, SAMPLES);
+            uart_transfer(adcArray, fftArray);
+            // Increment count
+            count++;                      
+            
+            // Check if 'o' character received
+            if (charO) {
+                if (count < 10) {  
+                    // If count is less than 10, return to SAMPLING state
+                    state = SAMPLING;
+                    charO = 0;
+                    ca_cfar(fftArray, threshold_cfar, signal_cfar);
+                
+                    // Perform threshold detection
+                    uint8_t target_detected = 0;
+                    for (int i = 0; i < N; i++) {
+                        if (signal_cfar[i] > 0) {
+                            target_detected = 1;
+                            break;
+                        }
+                    } 
+                    if (target_detected) {
+                        LED_RED_Write(1);
+                    } else {
+                        LED_RED_Write(0);
+                    }
+                } else if (count == 10) {
+                    // If count is 10, return to IDLE state
+                    state = IDLE;  
+                    charO = 0;
+                }
+            }
+            break;
+        
+        default:
+            // Default to IDLE state
+            state = IDLE;
+            break;
+    }
+}
+
+/*  STATEMACHINE WITHOUT CFAR
+ * statemachine function to handle the state transitions and actions.
+ * @param : uint16_t *adcArray - Pointer to the array to store ADC samples.
+ * @return : None
+*/
 void statemachine(uint16_t *adcArray)
 {
     switch (state)

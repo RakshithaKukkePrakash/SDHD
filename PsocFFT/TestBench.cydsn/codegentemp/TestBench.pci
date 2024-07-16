@@ -1,5 +1,5 @@
 # TestBench
-# 2024-06-18 22:40:22Z
+# 2024-07-03 07:13:42Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -11,9 +11,9 @@ set_io "ADC_In(0)" iocell 15 5
 set_io "DAC_Out(0)" iocell 15 4
 set_io "UART_TX(0)" iocell 2 1
 set_io "UART_RX(0)" iocell 2 0
-set_io "Push_Button(0)" iocell 2 4
-set_io "LED_RED(0)" iocell 2 7
-set_io "LED_GREEN(0)" iocell 2 5
-set_io "LED_ORANGE(0)" iocell 2 6
+set_io "Push_Button(0)" iocell 2 7
+set_io "LED_RED(0)" iocell 2 4
+set_io "LED_GREEN(0)" iocell 2 6
+set_io "LED_ORANGE(0)" iocell 2 5
 set_location "\WaveDAC:VDAC8:viDAC8\" vidaccell -1 -1 0
 set_location "\ADC_DelSig:DSM\" dsmodcell -1 -1 0
